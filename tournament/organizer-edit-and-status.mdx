@@ -1,0 +1,50 @@
+---
+title: "Chỉnh sửa và trạng thái giải"
+description: "Cách Ban tổ chức chỉnh sửa giải và chuyển trạng thái đúng luồng"
+---
+
+## Khi nào cần chỉnh sửa giải?
+
+<Frame>
+  <img src="/images/tournament/organizer-status.svg" alt="Minh họa luồng trạng thái giải đấu từ nháp đến hoàn thành." />
+</Frame>
+
+Bạn nên cập nhật khi:
+
+- Thay đổi lịch thi đấu hoặc hạn đăng ký
+- Điều chỉnh nội dung thi đấu hoặc mức phí
+- Bổ sung mô tả, banner, thông tin tài trợ
+
+Nếu bạn chưa chắc nghĩa từng trạng thái, mở [Glossary Tournament](/tournament/organizer-glossary) để tra nhanh.
+
+## Trạng thái giải đấu thường gặp
+
+- `draft` (nháp)
+- `published` (công khai)
+- `registration_open` (đang mở đăng ký)
+- `registration_closed` (đã khóa đăng ký)
+- `in_progress` (đang diễn ra)
+- `completed` (đã kết thúc)
+- `cancelled` (đã hủy)
+
+## Quy tắc chuyển trạng thái
+
+Hệ thống có kiểm tra chuyển trạng thái hợp lệ để tránh lỗi vận hành.
+
+Ví dụ:
+
+- Không thể chuyển từ `completed` về `draft`
+- Không thể chuyển từ `in_progress` về `draft`
+
+<Warning>
+Hãy xác nhận trạng thái thật sự trước khi chuyển, đặc biệt khi giải đã vào giai đoạn thi đấu.
+</Warning>
+
+## Luồng thực tế khuyến nghị
+
+1. Tạo nháp (`draft`)
+2. Công khai (`published`)
+3. Mở đăng ký (`registration_open`)
+4. Khóa đăng ký (`registration_closed`)
+5. Bắt đầu thi đấu (`in_progress`)
+6. Kết thúc giải (`completed`)

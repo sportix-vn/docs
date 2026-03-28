@@ -1,68 +1,57 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Sportix",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#E5FF38",
+    "light": "#E5FF38",
+    "dark": "#D4EE20"
   },
   "favicon": "/favicon.svg",
+  "font": {
+    "headings": {
+      "family": "Be Vietnam Pro"
+    },
+    "body": {
+      "family": "Be Vietnam Pro"
+    }
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Hướng dẫn",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Bắt đầu",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "global-settings"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Coach",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "coach/quickstart",
+              "coach/overview",
+              "coach/create-profile",
+              "coach/create-program",
+              "coach/manage-programs",
+              "coach/manage-lessons",
+              "coach/use-templates",
+              "coach/faq"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Tournament (Organizer)",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "tournament/organizer-quickstart",
+              "tournament/organizer-create-tournament",
+              "tournament/organizer-edit-and-status",
+              "tournament/organizer-manage-athletes",
+              "tournament/organizer-bracket-manager",
+              "tournament/organizer-hud-live-score",
+              "tournament/organizer-glossary",
+              "tournament/organizer-faq"
             ]
           }
         ]
@@ -71,13 +60,13 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "Tài liệu",
+          "href": "https://docs.sportix.vn",
           "icon": "book-open-cover"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://sportix.vn/blog",
           "icon": "newspaper"
         }
       ]
@@ -90,33 +79,35 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Hỗ trợ",
+          "href": "mailto:support@sportix.vn"
+      },
+      {
+        "label": "Liên hệ",
+        "href": "https://sportix.vn/lien-he"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Vào Sportix",
+      "href": "https://sportix.vn"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/sportixvn"
     }
   }
 }
