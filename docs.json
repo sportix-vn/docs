@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Sportix",
   "colors": {
-    "primary": "#E5FF38",
-    "light": "#D4EE20",
-    "dark": "#A8CC00"
+    "primary": "#93A63A",
+    "light": "#93A63A",
+    "dark": "#7F9130"
   },
   "favicon": "/favicon.svg",
   "font": {
