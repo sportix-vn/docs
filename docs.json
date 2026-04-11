@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Sportix",
   "colors": {
-    "primary": "#93A63A",
-    "light": "#93A63A",
-    "dark": "#7F9130"
+    "primary": "#E5FF38",
+    "light": "#D4EE20",
+    "dark": "#A8CC00"
   },
   "favicon": "/favicon.svg",
   "font": {
@@ -24,7 +24,8 @@
           {
             "group": "Bắt đầu",
             "pages": [
-              "index"
+              "index",
+              "he-thong-diem-trinh"
             ]
           },
           {

@@ -1,0 +1,84 @@
+---
+title: "Hệ thống điểm trình"
+description: "Cách Sportix tính và cập nhật điểm trình ELO để ghép kèo, xếp hạt giống và theo dõi tiến bộ công bằng"
+---
+
+## Hệ thống điểm trình Sportix là gì?
+
+Sportix dùng hệ thống điểm trình **ELO** để phản ánh trình độ thực tế của người chơi theo thời gian.
+
+- Thang điểm chung: **2000 - 8000**.
+- Dùng cho cả cầu lông và pickleball.
+- Điểm số là dữ liệu chính để ghép kèo, lọc đối thủ và xếp hạt giống.
+
+## Cách hệ thống hoạt động
+
+Hệ thống điểm trình trên Sportix vận hành theo hướng **độc lập và nhất quán**:
+
+- Điểm được cập nhật dựa trên kết quả thi đấu và hoạt động trong hệ thống.
+- Không dùng cơ chế "chấm trình" thủ công theo cảm tính để tăng/giảm điểm.
+- Nhãn trình độ chỉ để hiển thị cho dễ hiểu, còn điểm ELO mới là nguồn dữ liệu chính.
+
+<Info>
+Mục tiêu của Sportix là giữ cách đánh giá trình độ công bằng, minh bạch và có thể theo dõi theo thời gian.
+</Info>
+
+## Điểm trình tăng giảm khi nào?
+
+Trong thực tế sử dụng, điểm trình sẽ thay đổi theo dữ liệu thi đấu mà bạn tham gia trên nền tảng, đặc biệt là qua các trận thuộc giải đấu.
+
+- Kết quả thi đấu tốt hơn kỳ vọng: điểm có xu hướng tăng.
+- Kết quả thấp hơn kỳ vọng: điểm có thể giảm.
+- Mục tiêu là phản ánh đúng phong độ hiện tại, không phải "đóng cứng" một mức trình.
+
+## Bảng mốc điểm trình
+
+### Mốc hiển thị chính (4 tầng)
+
+| ELO range | Nhãn | Tên hiển thị |
+| --- | --- | --- |
+| 2000-2999 | Novice | Mới chơi |
+| 3000-3999 | Intermediate | Trung cấp |
+| 4000-4999 | Advanced | Cao cấp |
+| 5000-8000 | Professional | Chuyên nghiệp |
+
+### Nhãn quen thuộc trong cộng đồng
+
+| Nhãn | Mốc điểm gốc |
+| --- | --- |
+| Y | 2000 |
+| TBY | 3000 |
+| TB | 3000 |
+| TB+ | 4000 |
+| TBK | 4000 |
+| K | 5000 |
+| K+ | 5000 |
+
+## Vì sao có cả điểm và nhãn?
+
+- **Điểm ELO**: dùng để tính toán, so khớp, lọc và xếp hạng.
+- **Nhãn**: giúp bạn nhìn nhanh mức trình mà không cần đọc số.
+
+Nói ngắn gọn: **nhãn để đọc dễ, điểm để hệ thống xử lý công bằng**.
+
+## Sportix xử lý nhãn "Nam/Nữ TB+" như thế nào?
+
+Nếu dữ liệu đầu vào có dạng như `Nam TB+`, `Nữ TBK`, hệ thống sẽ tự chuẩn hóa về nhãn trình chính (`TB+`, `TBK`) trước khi map sang ELO.
+
+Điều này giúp dữ liệu thống nhất hơn khi lọc kèo và đối chiếu trình độ.
+
+## Điểm trình được dùng ở đâu trong Sportix?
+
+- Gợi ý và lọc kèo giao lưu phù hợp.
+- Hỗ trợ xếp hạt giống, phân nhóm trong giải đấu.
+- Theo dõi tiến bộ của bạn theo thời gian.
+
+## Câu hỏi thường gặp
+
+### Vì sao cùng nhãn mà điểm có thể khác?
+
+Vì nhãn là dải điểm (range), còn mỗi người có điểm số cụ thể khác nhau bên trong dải đó.
+
+### Có thể xin admin tăng/giảm điểm thủ công không?
+
+Sportix ưu tiên cơ chế tự động theo dữ liệu thi đấu để giữ tính công bằng và nhất quán cho toàn hệ thống.
