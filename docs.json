@@ -28,6 +28,13 @@
             ]
           },
           {
+            "group": "Cập nhật sản phẩm",
+            "pages": [
+              "changelog",
+              "timeline"
+            ]
+          },
+          {
             "group": "Coach",
             "pages": [
               "coach/quickstart",
