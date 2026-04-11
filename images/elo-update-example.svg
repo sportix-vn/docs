@@ -1,0 +1,33 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Vi du cap nhat diem trinh ELO</title>
+  <desc id="desc">Minh hoa 2 tinh huong: thang tran tang 20 diem va thua tran giam 20 diem.</desc>
+
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+  <rect x="30" y="30" width="1140" height="570" rx="24" fill="#111110" stroke="#2D2D2A"/>
+
+  <text x="80" y="110" fill="#E5FF38" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="40" font-weight="800">
+    Vi du cap nhat diem trinh sau tran dau
+  </text>
+  <text x="80" y="150" fill="#C7C7C3" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="24" font-weight="500">
+    Day la vi du minh hoa. Diem thuc te se duoc tinh theo muc ky vong va ket qua tran dau.
+  </text>
+
+  <rect x="80" y="210" width="500" height="320" rx="18" fill="#181817" stroke="#31312E"/>
+  <rect x="620" y="210" width="500" height="320" rx="18" fill="#181817" stroke="#31312E"/>
+
+  <text x="120" y="268" fill="#E5FF38" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="28" font-weight="700">Tinh huong A: Thang tran</text>
+  <text x="120" y="312" fill="#FFFFFF" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="22" font-weight="600">Diem truoc tran: 3,500</text>
+  <text x="120" y="350" fill="#FFFFFF" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="22" font-weight="600">Ket qua: Thang</text>
+  <text x="120" y="388" fill="#38D9FF" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="22" font-weight="600">Bien dong: +20</text>
+  <text x="120" y="438" fill="#E5FF38" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="34" font-weight="800">Diem moi: 3,520</text>
+
+  <text x="660" y="268" fill="#E5FF38" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="28" font-weight="700">Tinh huong B: Thua tran</text>
+  <text x="660" y="312" fill="#FFFFFF" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="22" font-weight="600">Diem truoc tran: 3,500</text>
+  <text x="660" y="350" fill="#FFFFFF" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="22" font-weight="600">Ket qua: Thua</text>
+  <text x="660" y="388" fill="#FF9A3C" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="22" font-weight="600">Bien dong: -20</text>
+  <text x="660" y="438" fill="#FF9A3C" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="34" font-weight="800">Diem moi: 3,480</text>
+
+  <text x="80" y="575" fill="#8D8D88" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="18" font-weight="500">
+    Sportix ELO Example - chi dung de mo ta nguyen ly tang giam diem.
+  </text>
+</svg>
