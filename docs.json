@@ -55,6 +55,7 @@
               "tournament/organizer-create-tournament",
               "tournament/organizer-edit-and-status",
               "tournament/organizer-manage-athletes",
+              "tournament/organizer-bracket-setup",
               "tournament/organizer-bracket-manager",
               "tournament/organizer-hud-live-score",
               "tournament/organizer-glossary",
