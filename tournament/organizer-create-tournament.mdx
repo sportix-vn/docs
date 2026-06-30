@@ -29,12 +29,15 @@ Nếu bạn có trang tổ chức công khai và đội ngũ cùng vận hành, 
   <img src="/images/tournament/organizer-create.svg" alt="Minh họa wizard tạo giải đấu gồm thông tin cơ bản, lịch, phí và mô tả." />
 </Frame>
 
-Ở bước đầu, bạn chọn:
+Wizard tạo giải gồm 6 bước: **Cơ bản**, **Nội dung**, **Lịch trình**, **Luật & Phí**, **Giải thưởng**, **Xác nhận**.
+
+Ở bước **Cơ bản**, bạn chọn:
 
 - Tên giải đấu
 - Môn thể thao
 - Thể thức thi đấu
 - Loại giải (phong trào/chuyên nghiệp)
+- Ngữ cảnh tạo giải: cá nhân hoặc dưới Đơn vị tổ chức
 
 ## Khác biệt giữa giải phong trào và chuyên nghiệp
 
@@ -57,9 +60,18 @@ Bạn thêm các nội dung như đơn nam, đơn nữ, đôi nam, đôi nam n�
 
 Với từng nội dung, có thể chỉnh:
 
+- Tên nội dung
+- Loại thi đấu: đơn, đôi, mixed
+- Giới tính áp dụng
+- Chế độ nội dung: tiêu chuẩn hoặc đồng đội
 - Số lượng tối đa
 - Mức phí
 - Điều kiện độ tuổi/ELO (nếu áp dụng)
+- Giải thưởng riêng theo nội dung
+
+<Tip>
+Mỗi nội dung là một hạng mục riêng. VĐV có thể đăng ký nhiều nội dung nếu thể lệ giải cho phép.
+</Tip>
 
 ## Bước 3: Cấu hình lịch trình và địa điểm
 
@@ -69,6 +81,7 @@ Bạn chọn:
 - Ngày kết thúc
 - Hạn đăng ký
 - Tỉnh/thành phố và sân (nếu có)
+- Hoặc nhập tên sân/địa chỉ thủ công nếu sân chưa có trong hệ thống
 
 <Warning>
 Hạn đăng ký cần trước ngày bắt đầu. Nếu chọn sai, hệ thống sẽ không cho tiếp tục.
@@ -76,7 +89,36 @@ Hạn đăng ký cần trước ngày bắt đầu. Nếu chọn sai, hệ thố
 
 ## Bước 4: Luật, phí và thông tin thanh toán
 
-Bạn cấu hình mức phí theo giải/nội dung và thông tin nhận chuyển khoản nếu có thu phí.
+Bạn cấu hình cách VĐV đăng ký, phí và thanh toán.
+
+### Cách VĐV đăng ký nội dung
+
+Bạn có thể chọn:
+
+- **Bắt buộc VĐV chọn nội dung khi đăng ký**: phù hợp khi VĐV tự chọn hạng mục thi đấu.
+- **VĐV chỉ đăng ký tham gia, BTC tự chia bảng/xếp nội dung sau**: phù hợp giải nội bộ hoặc giải cần Ban tổ chức phân nhóm thủ công.
+
+### Đăng ký guest
+
+Bật **Đăng ký guest** nếu muốn người chưa có tài khoản Sportix vẫn có thể đăng ký hoặc được thêm vào danh sách.
+
+Sau đó, Ban tổ chức có thể quản lý thông tin guest ở danh sách VĐV và trong setup bracket.
+
+### Chế độ phí
+
+Sportix tự xác định theo mức phí của các nội dung:
+
+| Chế độ | Khi nào xuất hiện | Cách vận hành |
+| --- | --- | --- |
+| Miễn phí | Tất cả nội dung có phí bằng 0 | VĐV đăng ký không cần đối soát thanh toán. |
+| Ban tổ chức tự quản lý | Có phí nhưng không bật quản lý thanh toán trên Sportix | Ban tổ chức tự thu/đối soát ngoài hệ thống. |
+| Sportix quản lý | Có phí và bật quản lý thanh toán | Hiển thị thông tin chuyển khoản, theo dõi trạng thái thanh toán trong danh sách VĐV. |
+
+Nếu chọn Sportix quản lý thanh toán, hãy nhập đúng:
+
+- Tên ngân hàng
+- Số tài khoản
+- Tên chủ tài khoản
 
 ## Form đăng ký tùy chỉnh (trường tùy chỉnh)
 
@@ -110,6 +152,16 @@ Nếu bạn chọn "chỉ áp dụng cho nội dung đã chọn", hãy nhớ tic
 
 Bạn thêm cơ cấu giải và mô tả rõ ràng để VĐV nắm kỳ vọng trước khi đăng ký.
 
+Ở bước này nên chuẩn bị:
+
+- Nội dung lưu ý trước khi đăng ký
+- Luật/điều lệ giải
+- Cơ cấu giải thưởng tổng quan
+- Giải thưởng theo từng nội dung
+- Nội dung chi tiết giới thiệu giải
+- Ảnh poster
+- Nhà tài trợ, nếu là giải chuyên nghiệp và đã có sponsor trong hệ thống
+
 ## Bước 6: Xem lại và tạo giải
 
 Trước khi bấm tạo, kiểm tra nhanh:
@@ -117,8 +169,21 @@ Trước khi bấm tạo, kiểm tra nhanh:
 - Tên + lịch + hạn đăng ký
 - Nội dung thi đấu
 - Mức phí và thông tin thanh toán
+- Đăng ký guest có bật đúng nhu cầu không
+- Form tùy chỉnh có áp dụng đúng nội dung không
+- Poster/tài trợ có hiển thị đúng không
 - Trạng thái giải (nháp/công khai)
 
 <Tip>
 Bạn có thể tạo ở trạng thái nháp để rà soát nội bộ trước khi công bố.
 </Tip>
+
+## Sau khi tạo giải
+
+Sau khi tạo thành công, hãy đi tiếp theo thứ tự:
+
+1. Mở trang chi tiết giải để kiểm tra public view.
+2. Vào [Cài đặt và nhân sự giải](/tournament/organizer-settings-and-staff) để phân quyền manager nếu có team vận hành.
+3. Công bố hoặc mở đăng ký khi thông tin đã sẵn sàng.
+4. Theo dõi VĐV ở [Quản lý VĐV đăng ký](/tournament/organizer-manage-athletes).
+5. Khi danh sách đã chốt, setup bracket ở [Setup bracket sau khi tạo giải](/tournament/organizer-bracket-setup).

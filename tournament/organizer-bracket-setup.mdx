@@ -33,8 +33,8 @@ Nên setup bracket sau khi đã chốt hoặc khóa đăng ký để hạn chế
   <Step title="Tạo bracket và kiểm tra preview">
     Bấm Tạo Bracket, xem preview, rồi kiểm tra các trận, BYE và vị trí VĐV/cặp.
   </Step>
-  <Step title="Gán slot hoặc mở Bracket Manager">
-    Nếu tạo khung trống, gán VĐV/cặp vào slot rồi lưu. Khi bracket đã sẵn sàng, mở Bracket Manager để điều hành trận đấu.
+  <Step title="Gán slot, chỉnh BYE hoặc mở Bracket Manager">
+    Nếu tạo khung trống, gán VĐV/cặp vào slot hoặc click trực tiếp vào trận còn thiếu người để xếp nhanh. Kiểm tra BYE trước khi mở Bracket Manager.
   </Step>
 </Steps>
 
@@ -73,19 +73,69 @@ Nếu danh sách còn sai, hãy xử lý trước khi tạo bracket. Tạo lại
 
 Khi cần bổ sung VĐV thủ công trong lúc setup, dùng khu **Thêm nhanh VĐV**.
 
+Tính năng này phù hợp khi Ban tổ chức có danh sách VĐV ngoài hệ thống, danh sách đăng ký tại sân, hoặc cần nhập nhanh nhiều người trước khi bốc thăm. VĐV được thêm theo cách này là guest registration, vẫn có thể xuất hiện trong danh sách VĐV, gán slot và bracket như đăng ký bình thường.
+
 Luồng khuyến nghị:
 
 1. Chọn đúng nội dung thi đấu.
 2. Bấm nút thêm nhanh trong khu **Thêm nhanh VĐV**.
-3. Nhập danh sách VĐV hoặc cặp guest theo form hiển thị.
-4. Kiểm tra thông báo sau khi lưu.
-5. Mở lại **DS VĐV hiện tại** để kiểm tra danh sách đã được thêm đúng chưa.
+3. Dán danh sách VĐV hoặc cặp guest vào ô nhập.
+4. Kiểm tra phần đếm dòng hợp lệ và dòng lỗi trước khi lưu.
+5. Bấm nút thêm nhanh theo danh sách.
+6. Kiểm tra thông báo sau khi lưu.
+7. Mở lại **DS VĐV hiện tại** để kiểm tra danh sách đã được thêm đúng chưa.
 
-Với nội dung đơn, mỗi dòng thường tương ứng 1 VĐV. Với nội dung đôi/mixed, mỗi dòng thường tương ứng 1 cặp.
+### Cú pháp nhập nhanh
+
+Với nội dung đơn hoặc nội dung đồng đội cần admin xếp cặp sau, mỗi dòng là 1 VĐV:
+
+```text
+Nguyễn Văn A
+Trần Văn B
+Phạm Văn C
+```
+
+Với nội dung đôi hoặc mixed, mỗi dòng là 1 cặp theo định dạng `Tên A - Tên B`:
+
+```text
+Nguyễn Văn A - Nguyễn Văn B
+Trần Văn C - Lê Văn D
+Phạm Văn E - Hoàng Văn F
+```
+
+Sportix tự bỏ qua dòng trống và chuẩn hóa khoảng trắng thừa. Mỗi tên cần có ít nhất 2 ký tự.
+
+### Kiểm tra lỗi trước khi lưu
+
+Sau khi dán danh sách, màn hình hiển thị:
+
+- **Hợp lệ**: số dòng sẽ được tạo.
+- **Lỗi**: số dòng chưa đúng định dạng.
+- Ví dụ hợp lệ từ các dòng đầu tiên để bạn rà nhanh.
+- Tối đa một số dòng lỗi đầu tiên, kèm số dòng để sửa.
+
+Các lỗi thường gặp:
+
+- Nội dung đôi/mixed nhưng dòng không có dấu `-` giữa 2 tên.
+- Một dòng có nhiều hơn 2 người trong nội dung đôi/mixed.
+- Tên quá ngắn.
+- VĐV hoặc cặp bị trùng trong chính danh sách đang dán.
 
 <Tip>
-Nếu bạn đang ở chế độ tạo bảng từ danh sách đăng ký, Sportix có thể tự chia lại danh sách vào bảng hiện tại sau khi thêm nhanh. Nếu bạn đã tạo khung trống, Sportix có thể random lại slot trong bracket hiện tại tùy trạng thái màn hình.
+Nếu nội dung có nhiều dòng lỗi, hãy sửa ngay trong ô nhập rồi kiểm tra lại số dòng hợp lệ trước khi bấm lưu. Không cần đóng modal.
 </Tip>
+
+### Sau khi thêm nhanh
+
+Sau khi lưu thành công, Sportix sẽ tải lại danh sách đăng ký của nội dung hiện tại.
+
+- Nếu bạn đang setup vòng tròn bằng danh sách đăng ký, Sportix có thể tự chia đều danh sách mới vào các bảng hiện tại.
+- Nếu bạn đã tạo khung trống và bracket đang có slot, Sportix có thể random lại slot để đưa VĐV/cặp mới vào bracket hiện tại.
+- Nếu có dòng lỗi từ server, Sportix vẫn báo số VĐV/cặp đã tạo và số dòng lỗi để bạn kiểm tra lại.
+
+<Warning>
+Nếu bạn đã xếp slot thủ công một phần, hãy kiểm tra lại preview sau khi thêm nhanh. Việc random lại slot có thể thay đổi vị trí hiện tại trong bracket.
+</Warning>
 
 ## Bước 4: Ghép cặp thủ công cho nội dung đôi/mixed
 
@@ -138,6 +188,10 @@ Với loại trực tiếp, nếu số VĐV/cặp không phải lũy thừa củ
 <Info>
 BYE nghĩa là VĐV/cặp được miễn vòng đó và tự động đi tiếp. BYE thường xuất hiện khi số lượng VĐV/cặp không khớp hoàn toàn với kích thước bracket.
 </Info>
+
+<Tip>
+Ví dụ loại trực tiếp 6 VĐV/cặp sẽ được đưa vào bracket 8 slot và có 2 BYE. Với 111 VĐV/cặp, bracket sẽ mở rộng lên 128 slot và có 17 BYE.
+</Tip>
 
 ## Bước 6: Cấu hình tên giai đoạn và thể thức
 
@@ -224,6 +278,7 @@ Bạn có thể:
 - Tìm nhanh theo Slot ID
 - Bấm **Random xếp VĐV** hoặc **Random xếp cặp**
 - Bấm **Lưu xếp slot** để lưu lại
+- Hoặc click vào một trận còn thiếu người trong preview để xếp trực tiếp vào slot của trận đó
 
 Với nội dung đôi/mixed, mỗi lựa chọn trong danh sách sẽ là một cặp. Với nội dung đơn, mỗi lựa chọn là một VĐV.
 
@@ -231,7 +286,44 @@ Với nội dung đôi/mixed, mỗi lựa chọn trong danh sách sẽ là một
 Random xếp slot có thể thay đổi vị trí hiện tại. Nếu bạn đã xếp thủ công một phần, hãy kiểm tra lại trước khi lưu.
 </Warning>
 
-## Bước 10: Ưu tiên BYE theo seed
+### Xếp trực tiếp từ một trận trong preview
+
+Khi tạo khung trống, bạn có thể click vào trận chưa đủ VĐV/cặp trong khu **Xem trước bảng đấu**. Sportix sẽ mở hộp thoại **Xếp VĐV vào trận đấu** hoặc **Xếp cặp vào trận đấu**.
+
+Trong hộp thoại này:
+
+- Chọn VĐV/cặp cho Bên 1 hoặc Bên 2.
+- Nếu một bên là BYE, hệ thống hiển thị **BYE - không cần xếp**.
+- Nếu thay dữ liệu đã xếp, hãy xác nhận trước khi lưu.
+- Các slot khác trong bracket được giữ nguyên.
+
+Luồng này nhanh hơn khi bạn đang nhìn preview và chỉ muốn sửa một trận cụ thể.
+
+## Bước 10: Kiểm tra và chỉnh BYE
+
+Với loại trực tiếp tạo bằng khung trống, BYE nằm ở vòng 1. Sportix hỗ trợ một số thao tác để kiểm tra và chỉnh cách đặt BYE trước khi vào thi đấu.
+
+### Đẩy BYE xuống cuối
+
+Trong khu **Xem trước bảng đấu**, nút **Đẩy BYE xuống cuối** sẽ xuất hiện khi:
+
+- Bracket là loại trực tiếp.
+- Bạn đang dùng chế độ tạo khung trống.
+- Vòng 1 đang có BYE.
+
+Dùng nút này khi bạn muốn các trận BYE được gom về cuối vòng 1 để preview dễ đọc hơn.
+
+<Warning>
+Thao tác chỉnh cách xếp BYE sẽ tạo lại bracket của nội dung hiện tại. Hãy dùng trước khi bắt đầu nhập điểm hoặc trước khi trận đã có trạng thái thi đấu.
+</Warning>
+
+### Sửa BYE thủ công
+
+Trong khu gán slot, nút **Sửa BYE** cho phép chọn các trận vòng 1 sẽ có BYE. Chỉ chọn đúng số trận BYE mà hệ thống yêu cầu.
+
+Ví dụ nếu bracket có 2 BYE, bạn cần chọn đúng 2 trận vòng 1 có một bên được miễn đấu.
+
+### Ưu tiên BYE theo seed
 
 Với nội dung đôi/mixed có BYE, bạn có thể dùng **Ưu tiên BYE theo seed** để xem các cặp seed cao được ưu tiên miễn vòng.
 
@@ -253,9 +345,13 @@ Bạn nên kiểm tra:
 - Trận nào còn thiếu VĐV/cặp
 - Với team tie, các đội và lượt trận con có đúng chưa
 
-Nếu click vào một trận chưa đủ VĐV/cặp, Sportix sẽ nhắc bạn gán VĐV vào slot trước. Hãy quay lại khu **Gán VĐV vào vị trí nhánh**, chọn slot còn thiếu và lưu lại.
+Nếu click vào một trận chưa đủ VĐV/cặp, Sportix có thể mở hộp thoại xếp trực tiếp vào slot của trận. Với trận có một bên BYE, chỉ cần xếp bên còn lại.
 
 Nếu click vào trận đã đủ dữ liệu, bạn có thể mở thao tác nhập hoặc chỉnh tỉ số tùy trạng thái trận.
+
+<Tip>
+Khi tìm VĐV/cặp trong preview, hãy dùng ô tìm kiếm để highlight và di chuyển tới kết quả. Không nên đổi thứ tự hiển thị trận chỉ để tìm nhanh, vì thứ tự trận là một phần của cấu trúc bracket và đường nối nhánh đấu.
+</Tip>
 
 ## Bước 12: Thêm trận thủ công
 
@@ -311,7 +407,7 @@ Xem tiếp: [Bracket Manager](/tournament/organizer-bracket-manager).
   </Accordion>
 
   <Accordion title="Tôi tạo khung trống rồi nhưng chưa thấy tên VĐV trong bracket">
-    Đây là hành vi đúng. Sau khi tạo khung trống, bạn cần dùng khu Gán VĐV vào vị trí nhánh, chọn VĐV/cặp cho từng slot rồi bấm Lưu xếp slot.
+    Đây là hành vi đúng. Sau khi tạo khung trống, bạn có thể dùng khu Gán VĐV vào vị trí nhánh, hoặc click vào một trận còn thiếu người trong preview để xếp trực tiếp vào slot của trận đó.
   </Accordion>
 
   <Accordion title="Vì sao có BYE trong vòng 1?">
@@ -319,7 +415,11 @@ Xem tiếp: [Bracket Manager](/tournament/organizer-bracket-manager).
   </Accordion>
 
   <Accordion title="Tôi click vào trận nhưng không nhập điểm được">
-    Nếu trận chưa đủ VĐV/cặp, Sportix sẽ yêu cầu gán VĐV vào slot trước. Hãy quay lại khu gán slot, lưu xong rồi mở lại trận.
+    Nếu trận chưa đủ VĐV/cặp, hãy xếp slot trước. Với khung trống, bạn có thể xếp ngay từ hộp thoại khi click vào trận. Với trận đã đủ người nhưng vẫn không nhập điểm được, kiểm tra quyền organizer và trạng thái giải.
+  </Accordion>
+
+  <Accordion title="Khi nào dùng Đẩy BYE xuống cuối hoặc Sửa BYE?">
+    Dùng trước khi thi đấu để preview loại trực tiếp dễ kiểm soát hơn. Không nên chỉnh BYE sau khi đã nhập điểm, vì thao tác này có thể tạo lại bracket và reset trạng thái liên quan.
   </Accordion>
 
   <Accordion title="Có nên tạo lại bracket sau khi đã nhập điểm không?">

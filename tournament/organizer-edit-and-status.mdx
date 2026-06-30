@@ -14,8 +14,81 @@ Bạn nên cập nhật khi:
 - Thay đổi lịch thi đấu hoặc hạn đăng ký
 - Điều chỉnh nội dung thi đấu hoặc mức phí
 - Bổ sung mô tả, banner, thông tin tài trợ
+- Bật/tắt đăng ký guest
+- Cập nhật form đăng ký tùy chỉnh
+- Cấu hình hiển thị danh sách VĐV công khai
 
 Nếu bạn chưa chắc nghĩa từng trạng thái, mở [Glossary Tournament](/tournament/organizer-glossary) để tra nhanh.
+
+## Mở trang chỉnh sửa
+
+Từ trang chi tiết giải, vào **Cài đặt / Quản trị giải đấu** rồi bấm **Chỉnh sửa giải**.
+
+Nếu giải thuộc organization, đường chỉnh sửa sẽ nằm dưới organization tương ứng. Nếu giải chưa thuộc organization, owner có thể chuyển giải vào organization trong khu [Cài đặt và nhân sự giải](/tournament/organizer-settings-and-staff).
+
+## Những phần có thể chỉnh sửa
+
+Form chỉnh sửa dùng cùng cấu trúc với wizard tạo giải, nhưng có thêm dữ liệu hiện tại của giải.
+
+### Thông tin cơ bản
+
+Bạn có thể cập nhật:
+
+- Tên giải
+- Môn thể thao
+- Thể thức
+- Loại giải
+- Trạng thái giải
+
+<Warning>
+Khi giải đã `completed`, trạng thái bị khóa để tránh mở lại hoặc làm lệch kết quả đã chốt.
+</Warning>
+
+### Nội dung thi đấu
+
+Bạn có thể sửa danh sách nội dung, giới hạn VĐV, phí, giải thưởng và chế độ nội dung.
+
+<Warning>
+Không nên xóa hoặc thay đổi mạnh nội dung thi đấu sau khi đã có đăng ký, bracket hoặc kết quả. Việc thay đổi nội dung ở giai đoạn muộn có thể làm team vận hành phải rà lại đăng ký và bracket.
+</Warning>
+
+### Lịch trình và địa điểm
+
+Dùng khi cần đổi ngày bắt đầu, ngày kết thúc, hạn đăng ký, sân hoặc địa chỉ tổ chức.
+
+Hạn đăng ký vẫn nên trước ngày bắt đầu giải.
+
+### Luật, phí và form đăng ký
+
+Bạn có thể cập nhật:
+
+- Cách VĐV đăng ký nội dung.
+- Bật/tắt đăng ký guest.
+- Thông tin thanh toán.
+- Form đăng ký tùy chỉnh.
+
+Nếu thay đổi form tùy chỉnh khi đã có người đăng ký, hãy kiểm tra lại dữ liệu VĐV để tránh thiếu thông tin quan trọng.
+
+### Nội dung, hình ảnh và tài trợ
+
+Bạn có thể cập nhật:
+
+- Nội dung lưu ý trước khi đăng ký.
+- Điều lệ/luật giải.
+- Mô tả chi tiết.
+- Ảnh banner.
+- Ảnh poster.
+- Nhà tài trợ cho giải chuyên nghiệp.
+
+### Cấu hình nâng cao
+
+Khu **Cấu hình nâng cao** hiện có tùy chọn **Công khai danh sách VĐV**.
+
+Khi bật, mọi người có thể xem danh sách VĐV trên trang giải đấu. Thông tin liên hệ và thanh toán vẫn được ẩn.
+
+<Tip>
+Chỉ bật công khai danh sách VĐV khi Ban tổ chức muốn cộng đồng theo dõi danh sách tham gia trước giải. Nếu danh sách còn đang rà soát nội bộ, hãy để tắt.
+</Tip>
 
 ## Trạng thái giải đấu thường gặp
 
@@ -48,3 +121,38 @@ Hãy xác nhận trạng thái thật sự trước khi chuyển, đặc biệt 
 4. Khóa đăng ký (`registration_closed`)
 5. Bắt đầu thi đấu (`in_progress`)
 6. Kết thúc giải (`completed`)
+
+## Khi nào nên hạn chế chỉnh sửa?
+
+Hạn chế chỉnh sửa các phần sau khi giải đã có dữ liệu vận hành:
+
+- Sau khi có đăng ký: hạn chế đổi/xóa nội dung thi đấu.
+- Sau khi đã setup bracket: hạn chế đổi danh sách nội dung hoặc cách đăng ký.
+- Sau khi đã nhập điểm: không nên tạo lại bracket hoặc đổi thông tin ảnh hưởng kết quả.
+- Sau khi completed: chỉ sửa nội dung hiển thị thật sự cần thiết, không đổi trạng thái.
+
+## Checklist trước khi lưu
+
+- Tên, lịch và địa điểm đã đúng.
+- Nội dung thi đấu không làm mất logic đăng ký hiện tại.
+- Mức phí và thông tin thanh toán đã đúng.
+- Form đăng ký tùy chỉnh áp dụng đúng nội dung.
+- Cấu hình công khai danh sách VĐV đúng nhu cầu.
+- Poster/banner/tài trợ hiển thị đúng.
+- Trạng thái giải khớp với thực tế vận hành.
+
+## Lỗi thường gặp
+
+<AccordionGroup>
+  <Accordion title="Không lưu được vì trạng thái đã hoàn thành">
+    Giải đã completed sẽ bị khóa một số thay đổi trạng thái để bảo vệ kết quả. Nếu cần sửa nội dung hiển thị, chỉ chỉnh các trường không ảnh hưởng vận hành.
+  </Accordion>
+
+  <Accordion title="Đổi nội dung thi đấu có làm mất VĐV hoặc bracket không?">
+    Hệ thống cố gắng cập nhật nội dung theo ID hiện có, nhưng Ban tổ chức vẫn nên tránh xóa hoặc thay đổi mạnh nội dung đã có đăng ký/bracket. Hãy kiểm tra danh sách VĐV và bracket sau khi lưu.
+  </Accordion>
+
+  <Accordion title="Bật Công khai danh sách VĐV thì người ngoài thấy gì?">
+    Người ngoài có thể xem danh sách VĐV ở trang giải đấu, nhưng thông tin liên hệ và thanh toán vẫn được ẩn.
+  </Accordion>
+</AccordionGroup>

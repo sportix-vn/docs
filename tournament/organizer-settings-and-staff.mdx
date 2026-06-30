@@ -1,0 +1,161 @@
+---
+title: "Cài đặt và nhân sự giải"
+description: "Hướng dẫn Ban tổ chức dùng trang cài đặt giải, phân quyền manager, chuyển giải vào organization và mở các công cụ vận hành"
+---
+
+Trang **Cài đặt** là nơi Ban tổ chức điều hướng các thao tác vận hành quan trọng sau khi giải đã được tạo: chỉnh sửa giải, duyệt thanh toán, mở Bracket Manager, mở HUD Manager và quản lý nhân sự.
+
+<Info>
+**Ai có thể truy cập?**
+
+- Chủ giải hoặc organizer của giải.
+- Manager đã được thêm vào Ban tổ chức.
+- Với một số thao tác nhạy cảm như thêm/gỡ manager hoặc chuyển giải vào organization, chỉ owner mới thao tác được.
+</Info>
+
+## Mở trang cài đặt giải
+
+Từ trang chi tiết giải, mở tab hoặc khu **Cài đặt / Quản trị giải đấu**.
+
+Trong trang này bạn sẽ thấy:
+
+- Card **Quản trị giải đấu**.
+- Khu **Ban tổ chức**.
+- Danh sách owner, manager và lời mời manager đang chờ.
+
+## Quản trị giải đấu
+
+Card **Quản trị giải đấu** tập trung các lối tắt vận hành.
+
+### Chỉnh sửa giải
+
+Bấm **Chỉnh sửa giải** để mở form edit. Dùng khi cần sửa:
+
+- Thông tin cơ bản, lịch, địa điểm.
+- Nội dung thi đấu.
+- Luật, phí, form đăng ký.
+- Mô tả, poster, banner, tài trợ.
+- Cấu hình nâng cao.
+
+Xem thêm: [Chỉnh sửa và trạng thái giải](/tournament/organizer-edit-and-status).
+
+### Duyệt thanh toán
+
+Nếu giải có thu phí và bật quản lý thanh toán, card **Duyệt thanh toán** sẽ hiển thị số yêu cầu đang chờ đối soát.
+
+Bấm **Kiểm tra ngay** để chuyển sang danh sách VĐV với bộ lọc thanh toán phù hợp.
+
+<Tip>
+Nên duyệt thanh toán trước khi khóa đăng ký và trước khi tạo bracket để danh sách thi đấu sạch hơn.
+</Tip>
+
+### Mở bảng điểm
+
+Khi giải ở trạng thái `in_progress`, nút **Mở bảng điểm** đưa bạn tới Bracket Manager để nhập tỉ số và điều hành trận.
+
+Nếu giải đã `completed`, bracket và tỉ số được khóa để tránh sửa nhầm kết quả đã chốt.
+
+### Mở HUD Manager
+
+HUD Manager dùng để tạo URL overlay/scoreboard cho livestream hoặc màn hình TV.
+
+Nút **Mở HUD Manager** hiển thị khi giải không còn là nháp và chưa hoàn thành.
+
+Xem thêm: [HUD Live Score](/tournament/organizer-hud-live-score).
+
+## Quản lý Ban tổ chức
+
+Khu **Ban tổ chức** hiển thị owner và danh sách manager của giải.
+
+### Vai trò
+
+| Vai trò | Ý nghĩa |
+| --- | --- |
+| Owner | Chủ giải. Có quyền cao nhất, có thể thêm/gỡ manager và chuyển giải vào organization nếu đủ điều kiện. |
+| Manager | Người được phân quyền hỗ trợ vận hành giải. Có thể vào các khu quản trị giải theo quyền staff. |
+
+<Warning>
+Chỉ thêm manager là người bạn tin tưởng, vì manager có thể truy cập các khu vận hành nhạy cảm như danh sách VĐV, bracket, HUD và nhập điểm.
+</Warning>
+
+### Thêm manager đã có tài khoản Sportix
+
+1. Nhập username, email hoặc số điện thoại vào ô tìm kiếm.
+2. Chờ hệ thống trả kết quả người dùng.
+3. Kiểm tra đúng tên/email.
+4. Bấm **Thêm manager**.
+5. Kiểm tra người đó xuất hiện trong danh sách **Manager**.
+
+Nếu nhập quá ngắn, hệ thống sẽ chưa tìm. Hãy nhập đủ thông tin để tránh chọn nhầm người.
+
+### Mời manager bằng email
+
+Nếu không tìm thấy tài khoản nhưng bạn nhập email hợp lệ, hệ thống cho phép gửi lời mời qua email.
+
+Luồng khuyến nghị:
+
+1. Nhập email của người cần mời.
+2. Nếu hệ thống báo không tìm thấy tài khoản, bấm **Gửi lời mời qua email**.
+3. Người được mời mở email, đăng nhập hoặc đăng ký Sportix.
+4. Sau khi chấp nhận lời mời, họ trở thành manager của giải.
+
+Khu **Lời mời manager** hiển thị các lời mời đang chờ và thời gian hết hạn.
+
+### Hủy lời mời manager
+
+Với lời mời chưa được chấp nhận, owner có thể bấm **Hủy** trong danh sách lời mời.
+
+Nên hủy lời mời nếu:
+
+- Gửi nhầm email.
+- Người được mời không còn tham gia vận hành.
+- Muốn gửi lại lời mời mới.
+
+### Gỡ manager
+
+Owner có thể bấm **Gỡ** cạnh manager để thu hồi quyền vận hành của người đó.
+
+<Warning>
+Trước khi gỡ manager trong ngày thi đấu, hãy kiểm tra người đó có đang phụ trách nhập điểm, HUD hoặc danh sách VĐV không để tránh gián đoạn vận hành.
+</Warning>
+
+## Chuyển giải vào organization
+
+Nếu giải được tạo dưới tài khoản cá nhân hoặc là giải legacy chưa thuộc organization, owner có thể thấy nút **Chuyển giải vào organization**.
+
+Khi chuyển:
+
+- Giải sẽ thuộc organization được chọn.
+- Đường quản lý sẽ đi theo organization.
+- Quyền vận hành có thể dựa vào membership của organization.
+
+Chỉ chuyển khi bạn chắc chắn giải này nên nằm dưới thương hiệu/đơn vị tổ chức đó.
+
+## Checklist trước ngày thi đấu
+
+- Owner và manager đã được phân vai rõ.
+- Người nhập điểm đã có quyền truy cập.
+- Người phụ trách livestream đã mở thử HUD Manager.
+- Thanh toán đã được đối soát nếu giải có thu phí.
+- Bracket đã tạo và đã kiểm tra preview.
+- Không còn lời mời manager gửi nhầm hoặc không cần dùng.
+
+## Lỗi thường gặp
+
+<AccordionGroup>
+  <Accordion title="Không tìm thấy người dùng để thêm manager">
+    Hãy thử nhập email, username hoặc số điện thoại chính xác hơn. Nếu vẫn không thấy và bạn có email của người đó, dùng luồng gửi lời mời qua email.
+  </Accordion>
+
+  <Accordion title="Tôi không thấy nút thêm manager">
+    Thao tác thêm/gỡ manager chỉ dành cho owner của giải. Nếu bạn là manager, bạn có thể hỗ trợ vận hành nhưng không quản lý nhân sự cấp cao.
+  </Accordion>
+
+  <Accordion title="Không thấy nút HUD Manager">
+    HUD Manager không hiển thị khi giải còn ở nháp hoặc đã hoàn thành. Hãy kiểm tra trạng thái giải trước.
+  </Accordion>
+
+  <Accordion title="Có nên chuyển giải vào organization sau khi đã mở đăng ký không?">
+    Có thể chuyển nếu đúng chủ sở hữu vận hành, nhưng nên làm sớm trước ngày thi đấu để team quen đường quản lý mới.
+  </Accordion>
+</AccordionGroup>
