@@ -51,10 +51,37 @@ Trong quá trình thi đấu, bạn có thể:
 - Bắt đầu trận
 - Cập nhật tỉ số
 - Chỉnh sửa kết quả khi cần xác nhận lại
+- Mở màn trọng tài để staff nhập điểm tại sân
+- Mở nhanh TV Scoreboard hoặc OBS Overlay cho trận đang chọn
 
 <Warning>
 Chỉ cập nhật tỉ số khi đã có xác nhận chính thức từ trọng tài/bàn thư ký.
 </Warning>
+
+### Mở màn trọng tài
+
+Khi click vào một trận và mở hộp thoại cập nhật tỉ số, bấm **Mở màn trọng tài** để mở link nhập điểm riêng cho trận đó.
+
+Link có dạng:
+
+```text
+/referee/matches/{matchId}
+```
+
+Màn này phù hợp cho điện thoại của trọng tài hoặc bàn thư ký: cộng/trừ điểm, đổi giao cầu, hoàn tác, kết thúc trận và xem log thao tác.
+
+<Info>
+Người mở link trọng tài phải đăng nhập và có quyền staff/organizer của giải.
+</Info>
+
+### Mở link màn hình cho trận
+
+Trong cùng hộp thoại trận, bạn có thể mở nhanh:
+
+- **TV**: bảng điểm full-screen cho màn hình tại sân.
+- **OBS Overlay**: overlay livestream cho OBS/Streamlabs.
+
+Xem chi tiết cách dùng ở [HUD & Live Score](/tournament/organizer-hud-live-score).
 
 ## Bước 5: Hoàn tất nhánh và chốt kết quả
 

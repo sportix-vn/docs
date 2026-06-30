@@ -1,6 +1,6 @@
 ---
 title: "HUD & Live Score"
-description: "Cách tạo link overlay và bảng điểm TV để livestream giải đấu"
+description: "Cách tạo link overlay, bảng điểm TV và link trọng tài nhập điểm realtime cho giải đấu"
 ---
 
 ## HUD Manager dùng để làm gì?
@@ -13,36 +13,191 @@ HUD Manager giúp bạn tạo nhanh:
 
 - Link overlay cho OBS
 - Link bảng điểm cho màn hình TV/đạo diễn
+- Link hoặc màn nhập điểm cho trọng tài/staff
+- Luồng cập nhật tỷ số realtime từ sân lên bracket, overlay và scoreboard
 
 Bạn có thể xem định nghĩa HUD, overlay, scoreboard trong [Glossary Tournament](/tournament/organizer-glossary).
 
+<Info>
+**Điều kiện trước khi dùng HUD**
+
+- Giải đã có bracket và trận đấu.
+- Giải không còn ở trạng thái nháp.
+- Giải chưa hoàn thành.
+- Người thao tác là owner, organizer hoặc manager của giải.
+</Info>
+
 ## Bước 1: Mở HUD Manager
 
-Từ trang quản trị giải, chọn mở HUD Manager.
+Từ trang chi tiết giải, vào **Cài đặt / Quản trị giải đấu** rồi bấm **Mở HUD Manager**.
+
+Bạn cũng có thể mở nhanh từ Bracket Manager hoặc từ hộp thoại cập nhật tỉ số của một trận.
 
 ## Bước 2: Chọn trận cần hiển thị
 
 Bạn có thể lọc theo vòng và chọn trận cụ thể để xuất đúng link.
 
+Mỗi link realtime cần đúng `match` ID. Nếu copy link mẫu từ menu **Màn hình**, hãy thêm Match ID vào URL trước khi gửi cho đội stream.
+
+Ví dụ:
+
+```text
+/live/slug-giai-dau/scoreboard?match=match-uuid
+/live/slug-giai-dau/overlay?match=match-uuid&layout=bar&chroma=green
+```
+
 ## Bước 3: Chọn giao diện hiển thị
 
 Thiết lập các tùy chọn chính:
 
-- Layout
-- Theme
-- Hiển thị thương hiệu
+- **TV Scoreboard**: màn hình điểm full-screen cho TV hoặc đạo diễn.
+- **OBS Overlay**: overlay đặt lên livestream trong OBS/Streamlabs.
+- **Layout overlay**: `bar`, `corner`, hoặc `minimal`.
+- **Chroma key**: `green`, `blue`, `magenta`, hoặc `none`.
+- **Theme**: dark/light tùy nhu cầu hiển thị.
+- **Hiển thị thương hiệu**: bật/tắt logo/thông tin thương hiệu nếu cần.
 
-## Bước 4: Sao chép URL và gửi cho đội stream
+## Bước 4: Sao chép URL màn hình
 
-Sau khi chọn xong, copy URL overlay/scoreboard và gửi cho người phụ trách kỹ thuật livestream.
+Trong Bracket Manager, menu **Màn hình** có các lựa chọn:
+
+- **Copy link TV Scoreboard**
+- **Copy link OBS Overlay**
+
+Sau khi chọn xong, gửi URL tương ứng cho người phụ trách kỹ thuật livestream.
+
+### TV Scoreboard
+
+Dùng cho:
+
+- TV tại sân
+- Màn hình đạo diễn
+- Màn phụ theo dõi tỉ số
+
+URL có dạng:
+
+```text
+/live/{tournamentSlug}/scoreboard?match={matchId}&theme=dark&scale=1&brand=true&timer=true&sets=true
+```
+
+Các tham số hay dùng:
+
+| Tham số | Ý nghĩa |
+| --- | --- |
+| `match` | ID trận đấu cần hiển thị. Bắt buộc. |
+| `theme` | `dark` hoặc `light`. |
+| `scale` | Tỉ lệ hiển thị, từ `0.5` đến `2`. |
+| `brand` | Bật/tắt thương hiệu. |
+| `timer` | Bật/tắt timer. |
+| `sets` | Bật/tắt phần set. |
+
+### OBS Overlay
+
+Dùng cho livestream, chèn vào OBS bằng Browser Source.
+
+URL có dạng:
+
+```text
+/live/{tournamentSlug}/overlay?match={matchId}&layout=bar&chroma=green&opacity=0.9&position=bottom&theme=dark&brand=false
+```
+
+Các tham số hay dùng:
+
+| Tham số | Ý nghĩa |
+| --- | --- |
+| `match` | ID trận đấu cần hiển thị. Bắt buộc. |
+| `layout` | `bar`, `corner`, hoặc `minimal`. |
+| `chroma` | `green`, `blue`, `magenta`, hoặc `none`. |
+| `opacity` | Độ trong suốt, từ `0` đến `1`. |
+| `position` | Vị trí overlay: `top`, `bottom`, `top-left`, `top-right`, `bottom-left`, `bottom-right`. |
+| `theme` | `dark` hoặc `light`. |
+| `brand` | Bật/tắt thương hiệu. |
 
 <Tip>
 Nên test trước 15-30 phút để đảm bảo link đúng trận và đúng layout.
 </Tip>
+
+## Bước 5: Gửi link trọng tài nhập điểm
+
+Khi mở hộp thoại cập nhật tỉ số của một trận trong bracket, Sportix hiển thị nút **Mở màn trọng tài**.
+
+Link có dạng:
+
+```text
+/referee/matches/{matchId}
+```
+
+Màn trọng tài được tối ưu cho điện thoại tại sân:
+
+- Bấm **Bắt đầu** để chuyển trận sang đang đấu.
+- Bấm **+1** cho từng bên.
+- Bấm nút trừ điểm nếu nhập nhầm.
+- Đổi bên giao cầu.
+- Hoàn tác thao tác gần nhất.
+- Bấm **Kết thúc trận** khi đã có bên dẫn điểm.
+- Xem **Log trận đấu** để kiểm tra các thao tác đã nhập.
+
+<Warning>
+Link trọng tài yêu cầu đăng nhập và người dùng phải là staff/organizer của giải. Không gửi link này cho người không thuộc Ban tổ chức.
+</Warning>
+
+## Tỷ số realtime hoạt động thế nào?
+
+Khi trọng tài hoặc Ban tổ chức cập nhật điểm:
+
+- Màn trọng tài lưu lịch sử thao tác điểm.
+- Bracket public và Bracket Manager nhận cập nhật realtime.
+- TV Scoreboard và OBS Overlay cập nhật theo trận đang được mở.
+- Nếu trận hoàn thành, bracket có thể refresh lại để đồng bộ trạng thái/winner.
+
+Nếu màn hình không cập nhật:
+
+1. Kiểm tra đúng Match ID trong URL.
+2. Refresh TV/OBS Browser Source.
+3. Kiểm tra người nhập điểm có quyền staff/organizer.
+4. Mở lại Bracket Manager để xác nhận trận đã có dữ liệu.
+
+## Stream / Video chính thức
+
+Ngoài HUD và scoreboard, tab **Stream / Video** của giải cho phép Ban tổ chức thêm link YouTube, Facebook hoặc TikTok.
+
+Quy tắc link stream:
+
+- Chỉ chấp nhận URL HTTPS.
+- Hỗ trợ YouTube, Facebook và TikTok.
+- YouTube có thể hiển thị trình phát nhúng.
+- Facebook/TikTok có thể mở bằng link ngoài tùy nền tảng.
 
 ## Checklist trước khi lên sóng
 
 - Đúng trận
 - Đúng vòng
 - Đúng theme/layout
+- Link TV/OBS có đúng Match ID
+- Trọng tài đăng nhập được màn `/referee/matches/{matchId}`
+- Người nhập điểm đã được phân quyền staff/manager
 - Bảng điểm cập nhật realtime
+
+## Lỗi thường gặp
+
+<AccordionGroup>
+  <Accordion title="Overlay hoặc scoreboard báo Match ID không hợp lệ">
+    Kiểm tra tham số `match` trong URL. Match ID phải là UUID của trận đấu. Nếu copy link mẫu từ menu Màn hình, hãy thêm Match ID vào đúng vị trí.
+  </Accordion>
+
+  <Accordion title="Trọng tài mở link nhưng bị chuyển về đăng nhập">
+    Màn trọng tài yêu cầu đăng nhập. Sau khi đăng nhập, hệ thống sẽ quay lại đúng URL nếu redirect còn hợp lệ.
+  </Accordion>
+
+  <Accordion title="Trọng tài đăng nhập rồi nhưng không có quyền">
+    Tài khoản đó cần là owner, organizer hoặc manager/staff của giải. Owner có thể thêm manager trong trang Cài đặt giải.
+  </Accordion>
+
+  <Accordion title="OBS không thấy nền trong suốt">
+    Kiểm tra tham số `chroma`. Nếu dùng chroma key, chọn màu nền phù hợp trong URL rồi cấu hình key màu tương ứng trong OBS.
+  </Accordion>
+
+  <Accordion title="Điểm đã nhập nhưng TV chưa đổi">
+    Refresh Browser Source hoặc TV Scoreboard, kiểm tra đúng match trong URL, sau đó kiểm tra lại kết nối mạng tại sân.
+  </Accordion>
+</AccordionGroup>
