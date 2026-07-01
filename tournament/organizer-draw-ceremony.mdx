@@ -1,0 +1,91 @@
+---
+title: "Bốc thăm và màn hình draw"
+description: "Hướng dẫn Ban tổ chức dùng màn bốc thăm, màn viewer công khai và kiểm tra bracket trước khi thi đấu"
+---
+
+## Draw ceremony dùng để làm gì?
+
+Màn **Draw ceremony** dùng để trình chiếu quá trình bốc thăm hoặc công bố nhánh đấu cho VĐV, khán giả và livestream.
+
+Tính năng này phù hợp khi Ban tổ chức muốn:
+
+- Công bố bảng đấu trước ngày thi đấu.
+- Trình chiếu slot và cặp đấu trên màn hình lớn.
+- Chạy bốc thăm minh bạch trong buổi họp kỹ thuật.
+- Gửi link viewer cho người xem theo dõi từ xa.
+
+<Info>
+Draw ceremony là bước trình chiếu/công bố. Việc tạo cấu trúc bracket và gán VĐV vẫn nên thực hiện trong [Setup bracket](/tournament/organizer-bracket-setup).
+</Info>
+
+## Chuẩn bị trước khi mở draw
+
+Trước khi mở màn draw, hãy kiểm tra:
+
+- Giải đã có nội dung thi đấu cần công bố.
+- Danh sách VĐV/cặp đã được rà soát.
+- Bracket hoặc slot preview đã đúng.
+- BYE, seed và vị trí đặc biệt đã được kiểm tra.
+- Người trình chiếu biết nội dung nào sẽ được công bố.
+
+<Warning>
+Không nên chạy draw khi danh sách đăng ký còn thay đổi liên tục. Nếu phải thêm VĐV guest sau draw, hãy kiểm tra lại bracket và thông báo rõ cho các bên liên quan.
+</Warning>
+
+## Mở màn bốc thăm
+
+Từ trang giải hoặc khu quản trị bracket, mở màn bốc thăm của giải.
+
+Luồng vận hành khuyến nghị:
+
+1. Chọn đúng nội dung thi đấu.
+2. Kiểm tra số VĐV/cặp, số bảng hoặc số slot.
+3. Mở màn draw ở máy trình chiếu.
+4. Chạy công bố theo từng bảng, từng vòng hoặc từng slot.
+5. Kiểm tra lại bracket sau khi kết thúc.
+6. Chuyển sang Bracket Manager khi chuẩn bị thi đấu.
+
+## Màn viewer công khai
+
+Màn viewer dùng cho khán giả hoặc thiết bị trình chiếu phụ. Viewer chỉ nên hiển thị dữ liệu cần công khai, không dùng để nhập điểm hoặc chỉnh bracket.
+
+Dùng viewer cho:
+
+- Màn hình sân khấu.
+- Livestream buổi bốc thăm.
+- Link gửi VĐV xem nhánh sau khi công bố.
+
+<Tip>
+Nếu dùng OBS, có thể thêm màn viewer bằng Browser Source tương tự scoreboard. Kiểm tra kích thước màn hình trước khi lên sóng để chữ không bị cắt.
+</Tip>
+
+## Sau khi draw xong
+
+Sau khi công bố bracket:
+
+- Mở lại preview bracket để kiểm tra vị trí VĐV/cặp.
+- Đối chiếu với danh sách VĐV đã công bố.
+- Tạo thông báo nếu cần gửi link nhánh đấu cho VĐV.
+- Chỉ chuyển sang nhập điểm khi bracket đã được team vận hành xác nhận.
+
+Xem tiếp:
+
+- [Setup bracket](/tournament/organizer-bracket-setup)
+- [Bracket Manager](/tournament/organizer-bracket-manager)
+- [Thông báo giải đấu](/tournament/organizer-announcements)
+
+## Lỗi thường gặp
+
+<AccordionGroup>
+  <Accordion title="Draw viewer không có dữ liệu">
+    Kiểm tra giải đã có bracket hoặc dữ liệu slot cho nội dung đó chưa. Nếu chưa, quay lại Setup bracket để tạo hoặc gán slot trước.
+  </Accordion>
+
+  <Accordion title="Có nên chỉnh bracket ngay trong lúc đang livestream draw không?">
+    Chỉ chỉnh khi thật sự cần và phải thông báo rõ. Tốt nhất là kiểm tra danh sách, BYE và slot trước khi bắt đầu trình chiếu.
+  </Accordion>
+
+  <Accordion title="Sau draw có thêm VĐV guest được không?">
+    Có thể thêm nếu Ban tổ chức quyết định, nhưng cần kiểm tra lại bracket, BYE và thông báo lại cho VĐV vì vị trí thi đấu có thể thay đổi.
+  </Accordion>
+</AccordionGroup>

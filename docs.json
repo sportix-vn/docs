@@ -58,7 +58,12 @@
               "tournament/organizer-manage-athletes",
               "tournament/organizer-bracket-setup",
               "tournament/organizer-bracket-manager",
+              "tournament/organizer-draw-ceremony",
+              "tournament/organizer-team-tie-cross-team",
               "tournament/organizer-hud-live-score",
+              "tournament/organizer-stream-video",
+              "tournament/organizer-finish-and-podium",
+              "tournament/organizer-announcements",
               "tournament/organizer-glossary",
               "tournament/organizer-faq"
             ]

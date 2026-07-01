@@ -1,0 +1,119 @@
+---
+title: "Team tie và cross-team round robin"
+description: "Hướng dẫn Ban tổ chức vận hành nội dung đồng đội, rubber lineup và vòng tròn ghép đội trên Sportix"
+---
+
+## Khi nào dùng team tie?
+
+**Team tie** phù hợp với nội dung đồng đội, nơi một trận đội gồm nhiều trận con hoặc rubber. Ví dụ một cặp đội gặp nhau qua các lượt đơn/đôi, sau đó hệ thống tính đội thắng chung cuộc.
+
+Dùng team tie khi:
+
+- Mỗi đội có nhiều thành viên.
+- Một lượt đối đầu gồm nhiều rubber.
+- Ban tổ chức cần xếp lineup cho từng rubber.
+- Kết quả chung cuộc phụ thuộc vào số rubber thắng.
+
+<Info>
+Nếu giải chỉ có VĐV/cặp đấu trực tiếp, hãy dùng luồng bracket thường trong [Setup bracket](/tournament/organizer-bracket-setup).
+</Info>
+
+## Chuẩn bị đội và thành viên
+
+Trước khi tạo bracket team tie:
+
+- Kiểm tra danh sách VĐV của nội dung.
+- Xác định số đội và số thành viên mỗi đội.
+- Xếp VĐV vào đúng đội.
+- Kiểm tra đội không thiếu người so với luật giải.
+- Thống nhất thứ tự rubber sẽ thi đấu.
+
+Nếu cần bổ sung VĐV ngoài hệ thống, dùng [Quản lý VĐV đăng ký](/tournament/organizer-manage-athletes) hoặc khu thêm nhanh trong Setup bracket.
+
+## Tạo bracket team tie
+
+Luồng khuyến nghị:
+
+1. Chọn đúng nội dung đồng đội.
+2. Chọn format team tie nếu nội dung hỗ trợ.
+3. Kiểm tra danh sách đội.
+4. Chọn số bảng hoặc loại nhánh phù hợp.
+5. Tạo bracket.
+6. Mở preview để kiểm tra từng lượt đối đầu giữa các đội.
+
+<Warning>
+Không nên tạo bracket team tie khi đội chưa đủ thành viên hoặc chưa rõ luật rubber. Sửa đội sau khi đã có lịch đấu có thể làm lineup phải kiểm tra lại.
+</Warning>
+
+## Xếp lineup và rubber
+
+Mỗi trận team tie có thể gồm nhiều rubber. Ban tổ chức cần kiểm tra:
+
+- Rubber nào là đơn, đôi hoặc mixed.
+- Thành viên nào được xếp vào từng rubber.
+- Một VĐV có bị xếp trùng quá luật không.
+- Thứ tự rubber có đúng điều lệ không.
+
+Nếu hệ thống có gợi ý tự động lineup, hãy dùng như bước khởi tạo rồi kiểm tra thủ công trước khi thi đấu.
+
+## Nhập điểm rubber
+
+Khi thi đấu:
+
+1. Mở trận team tie trong Bracket Manager.
+2. Chọn rubber cần nhập điểm.
+3. Nhập tỉ số từng set theo luật.
+4. Hoàn tất rubber.
+5. Kiểm tra đội thắng chung cuộc sau khi đủ rubber.
+
+<Tip>
+Phân công một người theo dõi riêng team tie nếu giải có nhiều sân. Team tie có nhiều dữ liệu hơn trận thường nên cần kiểm tra kỹ trước khi chốt.
+</Tip>
+
+## Cross-team round robin
+
+**Cross-team round robin** dùng khi Ban tổ chức muốn tạo vòng tròn ghép cặp hoặc đối đầu giữa các nhóm/đội theo cấu trúc đặc biệt.
+
+Dùng khi:
+
+- Cần chia VĐV thành nhóm/đội trước.
+- Các đội hoặc nhóm gặp nhau theo vòng tròn.
+- Cần sắp xếp lại nhóm, thứ tự hoặc cặp đối đầu trước khi tạo lịch.
+
+Luồng khuyến nghị:
+
+1. Chuẩn bị danh sách VĐV hoặc đội.
+2. Tạo nhóm/đội theo cấu trúc mong muốn.
+3. Kiểm tra số lượng mỗi nhóm.
+4. Tạo lịch vòng tròn.
+5. Xem preview toàn bộ lượt đấu.
+6. Chỉ mở Bracket Manager khi lịch đã được xác nhận.
+
+## Checklist trước khi thi đấu
+
+- Mỗi đội đủ thành viên.
+- Lineup từng rubber đã được xác nhận.
+- Không có VĐV bị xếp trùng ngoài luật.
+- Lịch cross-team đã được đội vận hành kiểm tra.
+- Người nhập điểm hiểu cách mở rubber và chốt trận đội.
+- Podium/team winner đã được thống nhất cách tính.
+
+## Lỗi thường gặp
+
+<AccordionGroup>
+  <Accordion title="Không thấy lựa chọn team tie">
+    Kiểm tra nội dung thi đấu có được cấu hình theo chế độ đồng đội không. Nếu nội dung là đơn/đôi thường, hệ thống sẽ hiển thị luồng bracket thường.
+  </Accordion>
+
+  <Accordion title="Lineup bị thiếu người">
+    Kiểm tra đội đã đủ thành viên chưa và VĐV có bị xếp vào rubber khác không. Với nội dung có luật giới hạn số lượt, cần rà lại từng rubber.
+  </Accordion>
+
+  <Accordion title="Điểm rubber đã nhập nhưng đội thắng chưa đúng">
+    Kiểm tra tất cả rubber bắt buộc đã hoàn tất chưa, sau đó refresh Bracket Manager để đồng bộ trạng thái.
+  </Accordion>
+
+  <Accordion title="Có thể đổi lineup sau khi đã bắt đầu không?">
+    Chỉ đổi khi điều lệ cho phép và trận/rubber chưa bị khóa kết quả. Nếu đã nhập điểm, hãy thống nhất với Ban tổ chức trước khi sửa.
+  </Accordion>
+</AccordionGroup>

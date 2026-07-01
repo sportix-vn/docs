@@ -1,0 +1,85 @@
+---
+title: "Stream và video chính thức"
+description: "Hướng dẫn Ban tổ chức thêm link livestream/video cho giải và kiểm tra cách hiển thị trên trang public"
+---
+
+## Stream / Video dùng để làm gì?
+
+Tab **Stream / Video** giúp Ban tổ chức gom các link xem chính thức của giải trên trang Sportix.
+
+Dùng cho:
+
+- Livestream YouTube, Facebook hoặc TikTok.
+- Video replay sau giải.
+- Link theo từng sân, từng cụm sân hoặc từng buổi thi đấu.
+- Link tổng hợp cho khán giả trước khi vào chung kết.
+
+<Info>
+Stream / Video là nơi công bố link xem. Nếu cần overlay điểm realtime cho OBS, dùng [HUD & Live Score](/tournament/organizer-hud-live-score).
+</Info>
+
+## Thêm link stream
+
+Luồng khuyến nghị:
+
+1. Mở tab **Stream / Video** của giải.
+2. Bấm thêm link mới.
+3. Nhập tiêu đề dễ hiểu, ví dụ `Sân 1 - Vòng bảng` hoặc `Chung kết`.
+4. Dán URL HTTPS từ YouTube, Facebook hoặc TikTok.
+5. Lưu và kiểm tra tab public.
+
+Quy tắc link:
+
+- Chỉ dùng URL HTTPS.
+- YouTube có thể hiển thị trình phát nhúng.
+- Facebook/TikTok có thể mở bằng link ngoài tùy nền tảng.
+- Không dùng link riêng tư hoặc link yêu cầu đăng nhập nếu muốn khán giả xem được.
+
+## Sắp xếp và cập nhật link
+
+Trong ngày thi đấu, Ban tổ chức có thể cập nhật link khi đổi sân, đổi ca livestream hoặc thêm replay.
+
+Gợi ý đặt tên:
+
+| Tình huống | Tên gợi ý |
+| --- | --- |
+| Livestream theo sân | `Sân 1 - Livestream` |
+| Livestream chung kết | `Chung kết - Court chính` |
+| Video replay | `Replay chung kết đôi nam` |
+| Buổi bốc thăm | `Bốc thăm chia bảng` |
+
+Nếu có nhiều link, hãy đưa link quan trọng nhất lên đầu để người xem mở nhanh.
+
+## Kết hợp với HUD
+
+Với livestream có hiển thị điểm:
+
+1. Tạo hoặc chọn trận trong Bracket Manager.
+2. Copy link OBS Overlay từ HUD Manager.
+3. Thêm overlay vào OBS.
+4. Thêm link livestream chính thức vào tab Stream / Video.
+5. Kiểm tra người xem public có thấy link stream và điểm realtime đúng trận.
+
+## Checklist trước khi công bố
+
+- Link mở được ở trình duyệt ẩn danh.
+- Tiêu đề link ghi rõ sân, vòng hoặc nội dung.
+- Link không trỏ nhầm video test.
+- Nếu dùng YouTube, video đã ở trạng thái public/unlisted phù hợp.
+- Nếu dùng Facebook/TikTok, đã kiểm tra quyền xem từ tài khoản ngoài.
+
+## Lỗi thường gặp
+
+<AccordionGroup>
+  <Accordion title="YouTube không nhúng được">
+    Kiểm tra video có cho phép nhúng và URL có phải link xem hợp lệ không. Nếu vẫn không nhúng được, người xem có thể mở bằng link ngoài.
+  </Accordion>
+
+  <Accordion title="Facebook hoặc TikTok không hiển thị player trong Sportix">
+    Một số nền tảng giới hạn nhúng. Hãy dùng link ngoài và ghi tiêu đề rõ để người xem mở đúng stream.
+  </Accordion>
+
+  <Accordion title="Có nên đăng link OBS Overlay trong tab Stream / Video không?">
+    Không. OBS Overlay là link kỹ thuật cho đội stream. Tab Stream / Video chỉ nên đăng link xem dành cho khán giả.
+  </Accordion>
+</AccordionGroup>

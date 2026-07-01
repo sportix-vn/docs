@@ -1,0 +1,96 @@
+---
+title: "Hoàn tất giải và podium"
+description: "Hướng dẫn Ban tổ chức chốt giải, xử lý trận chưa hoàn tất và xác nhận bảng vinh danh sau giải"
+---
+
+## Khi nào hoàn tất giải?
+
+Chỉ hoàn tất giải khi Ban tổ chức đã xác nhận kết quả chính thức.
+
+Trước khi chốt, hãy kiểm tra:
+
+- Các trận quan trọng đã có kết quả đúng.
+- Chung kết hoặc trận tranh hạng đã được nhập điểm.
+- Không còn khiếu nại đang xử lý.
+- Podium của từng nội dung đã đúng.
+- Team vận hành đồng ý khóa kết quả.
+
+<Warning>
+Khi giải đã chuyển sang `completed`, bracket và tỉ số có thể bị khóa để tránh sửa nhầm kết quả đã công bố.
+</Warning>
+
+## Mở thao tác hoàn tất giải
+
+Trong khu Bracket Manager hoặc trang quản trị giải, mở thao tác hoàn tất giải khi giải đã vào giai đoạn thi đấu.
+
+Nếu hệ thống phát hiện còn trận chưa hoàn tất, Ban tổ chức cần kiểm tra trước khi chốt.
+
+## Xử lý trận chưa hoàn tất
+
+Trận chưa hoàn tất có thể là:
+
+- Trận chưa bắt đầu.
+- Trận đang đấu nhưng chưa bấm kết thúc.
+- Trận bị hủy hoặc walkover nhưng chưa cập nhật trạng thái.
+- Trận phụ không ảnh hưởng podium nhưng vẫn còn trong bracket.
+
+Luồng khuyến nghị:
+
+1. Lọc các trận chưa hoàn tất trong Bracket Manager.
+2. Kiểm tra trận nào cần nhập kết quả chính thức.
+3. Với trận không thi đấu, cập nhật trạng thái phù hợp nếu hệ thống hỗ trợ.
+4. Chỉ dùng tùy chọn bỏ qua/hủy trận khi Ban tổ chức đã thống nhất.
+5. Quay lại modal hoàn tất giải và kiểm tra lại danh sách cảnh báo.
+
+<Tip>
+Nếu trận chưa hoàn tất không ảnh hưởng kết quả chung cuộc, hãy ghi chú trong thông báo giải để VĐV hiểu vì sao bracket được chốt.
+</Tip>
+
+## Xác nhận podium
+
+Podium là bảng xếp hạng chung cuộc của nội dung hoặc giải, thường gồm:
+
+- Hạng nhất / huy chương vàng.
+- Hạng nhì / huy chương bạc.
+- Đồng hạng ba hoặc hạng ba tùy thể thức.
+
+Trước khi xác nhận podium:
+
+- Đối chiếu winner trong bracket.
+- Kiểm tra trận tranh hạng ba nếu giải có tổ chức.
+- Xem lại trường hợp walkover hoặc bỏ cuộc.
+- Nhờ người phụ trách chuyên môn xác nhận lần cuối.
+
+## Sau khi hoàn tất
+
+Sau khi giải được chốt:
+
+- Trang public có thể hiển thị summary hoặc bảng vinh danh.
+- HUD/Bracket Manager không còn dùng cho nhập điểm mới.
+- Ban tổ chức có thể đăng thông báo tổng kết.
+- Nếu cần sửa nhầm kết quả, liên hệ hỗ trợ hoặc kiểm tra quyền owner trước khi thao tác.
+
+Xem thêm:
+
+- [Bracket Manager](/tournament/organizer-bracket-manager)
+- [Thông báo giải đấu](/tournament/organizer-announcements)
+
+## Lỗi thường gặp
+
+<AccordionGroup>
+  <Accordion title="Không thấy nút hoàn tất giải">
+    Kiểm tra trạng thái giải, quyền tài khoản và dữ liệu bracket. Thao tác này thường chỉ dành cho owner/manager khi giải đã có dữ liệu thi đấu.
+  </Accordion>
+
+  <Accordion title="Hệ thống báo còn trận chưa hoàn tất">
+    Mở Bracket Manager để kiểm tra từng trận. Trận cần tính kết quả nên được nhập điểm hoặc cập nhật trạng thái trước khi chốt.
+  </Accordion>
+
+  <Accordion title="Podium sai thì xử lý thế nào?">
+    Chưa chốt thì quay lại bracket để sửa dữ liệu trận liên quan. Nếu đã completed, hạn chế tự sửa và liên hệ hỗ trợ khi cần mở khóa dữ liệu.
+  </Accordion>
+
+  <Accordion title="Có cần tạo thông báo sau khi hoàn tất giải không?">
+    Nên tạo thông báo tổng kết kèm link trang giải, nhất là khi giải có nhiều VĐV hoặc livestream để mọi người dễ xem lại kết quả.
+  </Accordion>
+</AccordionGroup>
