@@ -62,6 +62,7 @@ Với từng nội dung, có thể chỉnh:
 
 - Tên nội dung
 - Loại thi đấu: đơn, đôi, mixed
+- Cấu trúc thi đấu và thể thức riêng của nội dung
 - Giới tính áp dụng
 - Chế độ nội dung: tiêu chuẩn hoặc đồng đội
 - Số lượng tối đa
@@ -71,6 +72,47 @@ Với từng nội dung, có thể chỉnh:
 
 <Tip>
 Mỗi nội dung là một hạng mục riêng. VĐV có thể đăng ký nhiều nội dung nếu thể lệ giải cho phép.
+</Tip>
+
+<a id="cau-truc-thi-dau-theo-noi-dung-event" />
+
+## Cấu trúc thi đấu theo nội dung (event)
+
+Mỗi nội dung thi đấu có thể có cấu trúc riêng. Ví dụ cùng một giải có thể có **Đơn nam** đánh loại trực tiếp, còn **Đôi nam nữ** đánh vòng bảng rồi mới vào loại trực tiếp.
+
+Khi tạo hoặc chỉnh nội dung, bạn sẽ chọn một trong hai kiểu:
+
+| Kiểu cấu trúc | Khi nào dùng | Ví dụ |
+| --- | --- | --- |
+| **Một thể thức** | Chỉ sử dụng một thể thức duy nhất cho toàn bộ nội dung thi đấu. | Đơn nam đánh loại trực tiếp từ đầu đến cuối. |
+| **Kết hợp nhiều thể thức** | Nội dung cần nhiều giai đoạn, thường có vòng bảng trước rồi mới loại trực tiếp. | Vòng bảng → Loại trực tiếp. |
+
+### Một thể thức
+
+Chọn **Một thể thức** nếu nội dung chỉ cần một format vận hành xuyên suốt.
+
+Các lựa chọn thường gặp:
+
+- **Loại trực tiếp**: thua là dừng, phù hợp giải cần chạy nhanh.
+- **Nhánh thắng thua**: VĐV/cặp có thêm cơ hội ở nhánh thua.
+- **Vòng tròn**: các VĐV/cặp trong bảng gặp nhau để tính điểm xếp hạng.
+- **Hệ Thụy Sĩ**: phù hợp giải đông người và cần nhiều vòng ghép theo thành tích.
+
+### Kết hợp nhiều thể thức
+
+Chọn **Kết hợp nhiều thể thức** nếu nội dung có nhiều giai đoạn. Trường hợp phổ biến nhất là:
+
+1. Vòng bảng để tất cả VĐV/cặp có nhiều trận.
+2. Lấy một số suất đi tiếp mỗi bảng.
+3. Tạo vòng loại trực tiếp cho các suất đi tiếp.
+
+Khi chọn kiểu này, hãy nhập:
+
+- **Số bảng vòng bảng**: số group ở giai đoạn đầu.
+- **Số suất đi tiếp mỗi bảng**: số VĐV/cặp được lấy từ mỗi bảng sang vòng loại trực tiếp.
+
+<Tip>
+Nếu bạn chưa chắc nên chọn kiểu nào, hãy dùng **Một thể thức** cho giải nhỏ hoặc giải giao lưu. Dùng **Kết hợp nhiều thể thức** khi bạn muốn VĐV/cặp có vòng bảng trước khi bước vào các trận loại trực tiếp.
 </Tip>
 
 ## Bước 3: Cấu hình lịch trình và địa điểm

@@ -1,0 +1,165 @@
+---
+title: "Dashboard quản lý giải đấu"
+description: "Cách Ban tổ chức dùng dashboard tournament để theo dõi giải, setup bảng đấu, nhập tỉ số, mở HUD và quản lý livestream"
+---
+
+Dashboard quản lý giải đấu là màn hình chính cho Ban tổ chức sau khi đã tạo giải. Từ đây bạn có thể chuyển giữa các khu vận hành: tổng quan, setup bảng đấu, điều hành bracket, HUD live stream, danh sách VĐV và chỉnh sửa thông tin giải.
+
+<Frame>
+  <img src="/images/tournament/organizer-dashboard-overview.png" alt="Dashboard tổng quan giải đấu với sidebar quản lý, số liệu VĐV, nội dung, trạng thái và tiến độ trận đấu." />
+</Frame>
+
+<Info>
+**Trước khi thao tác**
+
+- Kiểm tra bạn đang chọn đúng workspace: **Cá nhân** hoặc tổ chức.
+- Kiểm tra đúng giải trong dropdown trên thanh trên cùng.
+- Với giải nhiều nội dung, kiểm tra đúng nội dung/event trước khi setup bracket, mở HUD hoặc nhập tỉ số.
+- Không bấm các nút ghi dữ liệu như **Lưu và công bố bracket**, **Bắt đầu giải đấu**, **Cập nhật tỉ số** hoặc **Reset tỉ số** nếu bạn chỉ đang kiểm tra màn hình.
+</Info>
+
+## Các khu chính trong dashboard
+
+Sidebar bên trái là đường dẫn nhanh cho toàn bộ vòng đời giải:
+
+| Khu | Dùng khi nào |
+| --- | --- |
+| **Tổng quan** | Theo dõi số nội dung, số VĐV/đội, trạng thái đăng ký, tiến độ trận đấu và các trận sắp diễn ra. |
+| **Setup bảng đấu** | Tạo bracket, gán slot, kiểm tra BYE và công bố bracket sau khi danh sách đã chốt. |
+| **Quản lý bảng đấu** | Xem sơ đồ nhánh, danh sách trận, bắt đầu giải và nhập tỉ số khi giải diễn ra. |
+| **Ban tổ chức** | Kiểm tra owner/manager và nhân sự được phân quyền vận hành. |
+| **Bốc thăm** | Quay slot, trình chiếu bốc thăm hoặc chuẩn bị livestream draw. |
+| **HUD live stream** | Chọn trận, tạo URL OBS Overlay, TV Scoreboard và preview hiển thị điểm. |
+| **Stream / Video** | Công bố link YouTube, Facebook, TikTok hoặc replay cho khán giả. |
+| **Danh sách VĐV** | Theo dõi đăng ký, thanh toán, guest registration và xuất danh sách. |
+| **Chỉnh sửa giải** | Cập nhật thông tin, cấu hình và trạng thái giải. |
+
+## Luồng 1: Từ tạo giải đến kiểm tra tổng quan
+
+Sau khi tạo giải, mở dashboard từ khu quản lý giải đấu. Tab **Tổng quan** giúp bạn rà nhanh:
+
+- Trạng thái giải: nháp, mở đăng ký, đóng đăng ký, đang diễn ra hoặc đã hoàn thành.
+- Số nội dung thi đấu.
+- Số VĐV/đội đã đăng ký.
+- Tỉ lệ check-in và tiến độ trận đấu.
+- Danh sách trận đang đánh, trận tiếp theo và trận vừa hoàn thành.
+
+Nếu số liệu chưa đúng, hãy xử lý ở **Danh sách VĐV** hoặc **Chỉnh sửa giải** trước khi tạo bracket.
+
+## Luồng 2: Setup bảng đấu
+
+Vào **Setup bảng đấu** khi danh sách đăng ký đã sẵn sàng để tạo hoặc chỉnh bracket.
+
+<Frame>
+  <img src="/images/tournament/organizer-dashboard-setup.png" alt="Tab Setup bảng đấu trong dashboard với bracket đã tạo, các nút huỷ thay đổi, tạo lại bảng đấu và lưu công bố bracket." />
+</Frame>
+
+Khi bracket đã có, Sportix hiển thị khu **Chỉnh sửa bracket đã tạo**. Các thay đổi ở đây là bản nháp cho đến khi bạn bấm **Lưu và công bố bracket**.
+
+Luồng khuyến nghị:
+
+1. Chọn đúng nội dung thi đấu.
+2. Kiểm tra số lượng VĐV/đội.
+3. Tạo bracket hoặc kiểm tra bracket đã tạo.
+4. Rà các trận BYE, TBD và slot còn thiếu.
+5. Chỉ bấm **Lưu và công bố bracket** khi đã chắc chắn bracket đúng.
+
+<Warning>
+Không tạo lại bracket khi giải đã bắt đầu nhập điểm, trừ khi Ban tổ chức đã thống nhất phương án vận hành. Tạo lại bracket có thể làm đội sân và người xem bị lệch thông tin.
+</Warning>
+
+Xem hướng dẫn chi tiết tại [Setup bracket sau khi tạo giải](/tournament/organizer-bracket-setup).
+
+## Luồng 3: Điều hành bracket và nhập tỉ số
+
+Vào **Quản lý bảng đấu** để xem bracket ở chế độ vận hành.
+
+<Frame>
+  <img src="/images/tournament/organizer-dashboard-bracket.png" alt="Tab Quản lý bảng đấu với sơ đồ nhánh, nút bắt đầu giải đấu, menu màn hình và trạng thái các trận." />
+</Frame>
+
+Màn này có hai chế độ chính:
+
+- **Sơ đồ nhánh**: xem bracket dạng nhánh, trạng thái từng trận, BYE, TBD và vòng đấu.
+- **Danh sách trận**: xem các trận theo danh sách để điều phối nhanh hơn trong ngày thi đấu.
+
+Nếu bracket đã tạo nhưng giải chưa chuyển sang thi đấu, Sportix hiển thị thông báo **Chờ bắt đầu giải đấu** và nút **Bắt đầu giải đấu**. Sau khi giải đã ở trạng thái thi đấu, Ban tổ chức có thể click vào trận để mở hộp thoại cập nhật tỉ số.
+
+<Frame>
+  <img src="/images/tournament/organizer-dashboard-score-modal.png" alt="Hộp thoại cập nhật tỉ số của một trận với tab Tỷ số, Log trận đấu, bên giao cầu, nút cộng trừ điểm và nút cập nhật tỉ số." />
+</Frame>
+
+Trong hộp thoại trận, bạn có thể:
+
+- Xem trạng thái trận và thể thức BO1/BO3/BO5.
+- Chọn hoặc đổi bên giao cầu.
+- Cộng/trừ điểm từng bên.
+- Đặt lại điểm từng bên nếu nhập nhầm.
+- Dùng **Kết thúc sớm** khi có bỏ cuộc, chấn thương hoặc walkover.
+- Xem **Log trận đấu** để kiểm tra thao tác đã nhập.
+- Bấm **Cập nhật tỉ số** sau khi đã kiểm tra đúng.
+
+Menu **Output** trong hộp thoại trận có các lối mở nhanh:
+
+<Frame>
+  <img src="/images/tournament/organizer-dashboard-output-menu.png" alt="Menu Output trong hộp thoại trận với các lựa chọn HUD stream, TV Display, OBS Overlay và Mở màn trọng tài." />
+</Frame>
+
+- **HUD stream**: mở khu cấu hình HUD cho trận đang chọn.
+- **TV Display**: mở bảng điểm toàn màn hình cho TV hoặc màn phụ.
+- **OBS Overlay**: mở overlay điểm cho livestream.
+- **Mở màn trọng tài**: mở màn nhập điểm riêng cho trọng tài/staff tại sân.
+
+Xem thêm tại [Bracket Manager](/tournament/organizer-bracket-manager).
+
+## Luồng 4: Mở HUD, TV Scoreboard và OBS Overlay
+
+Vào **HUD live stream** khi cần chuẩn bị màn điểm cho livestream hoặc màn hình tại sân.
+
+<Frame>
+  <img src="/images/tournament/organizer-dashboard-hud.png" alt="Tab HUD live stream với danh sách trận theo nội dung, trạng thái trận, tỉ số và BO đang áp dụng." />
+</Frame>
+
+Các bước:
+
+1. Chọn đúng nội dung thi đấu.
+2. Chọn đúng trận trong danh sách.
+3. Chọn layout overlay: **Thanh ngang**, **Góc màn hình** hoặc **Tối giản**.
+4. Chọn giao diện **Tối** hoặc **Sáng**.
+5. Bật/tắt hiển thị tên giải đấu và logo nhà tài trợ.
+6. Copy URL **OBS Overlay** cho đội stream.
+7. Copy URL **TV Scoreboard** cho màn hình TV hoặc máy tính kết nối màn lớn.
+8. Dùng khu **Xem trước Overlay** để kiểm tra bố cục.
+
+<Frame>
+  <img src="/images/tournament/organizer-dashboard-hud-config.png" alt="Cấu hình HUD sau khi chọn trận, gồm layout overlay, giao diện, URL OBS Overlay, URL TV Scoreboard và preview overlay." />
+</Frame>
+
+<Tip>
+Với OBS, thêm URL overlay bằng Browser Source. Nếu URL dùng nền trong suốt, bật **Allow transparency** trong OBS. Nếu dùng chroma key, chọn màu nền phù hợp rồi cấu hình key màu tương ứng trong OBS.
+</Tip>
+
+Xem hướng dẫn chi tiết tại [HUD & Live Score](/tournament/organizer-hud-live-score).
+
+## Luồng 5: Công bố stream và replay
+
+Tab **Stream / Video** dùng để công bố link xem cho khán giả. Tab này khác với HUD:
+
+- **HUD live stream** là link kỹ thuật cho đội stream hoặc màn hình tại sân.
+- **Stream / Video** là link public để người xem mở YouTube, Facebook, TikTok hoặc replay.
+
+Không đăng URL OBS Overlay vào Stream / Video. Chỉ đăng link xem dành cho khán giả.
+
+Xem hướng dẫn chi tiết tại [Stream và video chính thức](/tournament/organizer-stream-video).
+
+## Checklist trước ngày thi đấu
+
+- Đúng workspace và đúng giải.
+- Danh sách VĐV đã chốt.
+- Mỗi nội dung đã có bracket đúng.
+- BYE/TBD đã được rà soát.
+- Staff nhập điểm đã được phân quyền.
+- Đã test mở màn trọng tài cho ít nhất một trận.
+- Đã test URL TV Scoreboard và OBS Overlay.
+- Link Stream / Video public mở được ở trình duyệt ngoài.
+- Người vận hành biết tab nào dùng để setup, tab nào dùng để nhập tỉ số.
