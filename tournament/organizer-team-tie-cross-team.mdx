@@ -1,119 +1,335 @@
 ---
-title: "Team tie và cross-team round robin"
-description: "Hướng dẫn Ban tổ chức vận hành nội dung đồng đội, rubber lineup và vòng tròn ghép đội trên Sportix"
+title: "Team Battle: Cross-team và Team Tie"
+description: "Hướng dẫn Ban tổ chức chia đội, tạo lịch Team Battle, xếp lineup và vận hành từng trận Team Tie trên Sportix"
 ---
 
-## Khi nào dùng team tie?
+Sportix hỗ trợ nội dung đồng đội theo mô hình **Team Battle**: chia VĐV thành các đội, cho các đội gặp nhau theo vòng tròn và thi đấu nhiều trận con trong mỗi lượt đối đầu.
 
-**Team tie** phù hợp với nội dung đồng đội, nơi một trận đội gồm nhiều trận con hoặc rubber. Ví dụ một cặp đội gặp nhau qua các lượt đơn/đôi, sau đó hệ thống tính đội thắng chung cuộc.
+Trang này hướng dẫn Ban tổ chức từ lúc chuẩn bị danh sách VĐV đến khi tạo lịch, xếp sân, nhập tỉ số và theo dõi bảng xếp hạng.
 
-Dùng team tie khi:
+## Hiểu đúng các khái niệm
 
-- Mỗi đội có nhiều thành viên.
-- Một lượt đối đầu gồm nhiều rubber.
-- Ban tổ chức cần xếp lineup cho từng rubber.
-- Kết quả chung cuộc phụ thuộc vào số rubber thắng.
+- **Team Battle**: toàn bộ thể thức thi đấu đồng đội vòng tròn.
+- **Cross-team round robin**: cách Sportix xếp để mỗi đội gặp các đội còn lại theo từng chu kỳ.
+- **Team Tie**: một cuộc đối đầu giữa hai đội, ví dụ Đội A gặp Đội B.
+- **Rubber** hoặc **trận con**: từng trận đơn, đôi hoặc đôi nam nữ nằm trong một Team Tie.
+- **Lineup** hoặc **đội hình**: VĐV/cặp VĐV được chọn cho từng rubber.
+- **Chu kỳ**: một lượt vòng tròn đầy đủ, trong đó mỗi đội gặp tất cả đội còn lại một lần.
+- **Slot**: thứ tự ca thi đấu. Một vòng thi đấu có thể cần nhiều slot nếu không đủ sân.
+- **BYE**: lượt nghỉ của một đội khi tổng số đội là số lẻ.
 
 <Info>
-Nếu giải chỉ có VĐV/cặp đấu trực tiếp, hãy dùng luồng bracket thường trong [Setup bracket](/tournament/organizer-bracket-setup).
+Ví dụ: Team Battle có 4 đội. Một Team Tie giữa Đội A và Đội B có 3 rubber. Kết quả chung cuộc có thể là Đội A thắng 2–1 sau khi ba rubber hoàn tất.
 </Info>
 
-## Chuẩn bị đội và thành viên
+## Khi nào nên dùng Team Battle?
 
-Trước khi tạo bracket team tie:
+Dùng Team Battle khi:
 
-- Kiểm tra danh sách VĐV của nội dung.
-- Xác định số đội và số thành viên mỗi đội.
-- Xếp VĐV vào đúng đội.
-- Kiểm tra đội không thiếu người so với luật giải.
-- Thống nhất thứ tự rubber sẽ thi đấu.
+- VĐV đăng ký riêng lẻ rồi được Ban tổ chức chia vào các đội.
+- Các đội cần gặp nhau theo vòng tròn.
+- Mỗi cuộc đối đầu đội-vs-đội gồm nhiều trận con.
+- Ban tổ chức muốn đặt mục tiêu số trận cho mỗi VĐV.
+- Cần tự động cân bằng số lần ra sân hoặc tự xếp lineup thủ công.
 
-Nếu cần bổ sung VĐV ngoài hệ thống, dùng [Quản lý VĐV đăng ký](/tournament/organizer-manage-athletes) hoặc khu thêm nhanh trong Setup bracket.
+Nếu mỗi VĐV/cặp là một đơn vị thi đấu độc lập, hãy dùng bracket thường theo hướng dẫn [Setup bracket](/tournament/organizer-bracket-setup).
 
-## Tạo bracket team tie
+## Team Tie thông thường khác Team Battle thế nào?
 
-Luồng khuyến nghị:
+Sportix cũng có chế độ **Đồng đội (team tie)** cho bracket thông thường. Chế độ này phù hợp khi Ban tổ chức muốn mỗi slot trong bracket là một đội, nhưng vẫn dùng cấu trúc loại trực tiếp, vòng tròn hoặc nhiều giai đoạn đã chọn.
 
-1. Chọn đúng nội dung đồng đội.
-2. Chọn format team tie nếu nội dung hỗ trợ.
-3. Kiểm tra danh sách đội.
-4. Chọn số bảng hoặc loại nhánh phù hợp.
-5. Tạo bracket.
-6. Mở preview để kiểm tra từng lượt đối đầu giữa các đội.
-
-<Warning>
-Không nên tạo bracket team tie khi đội chưa đủ thành viên hoặc chưa rõ luật rubber. Sửa đội sau khi đã có lịch đấu có thể làm lineup phải kiểm tra lại.
-</Warning>
-
-## Xếp lineup và rubber
-
-Mỗi trận team tie có thể gồm nhiều rubber. Ban tổ chức cần kiểm tra:
-
-- Rubber nào là đơn, đôi hoặc mixed.
-- Thành viên nào được xếp vào từng rubber.
-- Một VĐV có bị xếp trùng quá luật không.
-- Thứ tự rubber có đúng điều lệ không.
-
-Nếu hệ thống có gợi ý tự động lineup, hãy dùng như bước khởi tạo rồi kiểm tra thủ công trước khi thi đấu.
-
-## Nhập điểm rubber
-
-Khi thi đấu:
-
-1. Mở trận team tie trong Bracket Manager.
-2. Chọn rubber cần nhập điểm.
-3. Nhập tỉ số từng set theo luật.
-4. Hoàn tất rubber.
-5. Kiểm tra đội thắng chung cuộc sau khi đủ rubber.
+| Nhu cầu | Nên chọn |
+| --- | --- |
+| Chia VĐV thành 2–8 đội và cho các đội gặp nhau vòng tròn | Team Battle |
+| Mỗi trận đội có nhiều rubber nhưng vẫn đi theo bracket loại trực tiếp hoặc cấu trúc khác | Đồng đội (team tie) |
+| VĐV/cặp đấu trực tiếp, không có trận đội | Bracket thường |
 
 <Tip>
-Phân công một người theo dõi riêng team tie nếu giải có nhiều sân. Team tie có nhiều dữ liệu hơn trận thường nên cần kiểm tra kỹ trước khi chốt.
+Nếu điều lệ ghi “đội gặp đội, mỗi VĐV cần được thi đấu gần bằng nhau”, Team Battle thường là lựa chọn phù hợp nhất.
 </Tip>
 
-## Cross-team round robin
+## Chuẩn bị trước khi thiết lập
 
-**Cross-team round robin** dùng khi Ban tổ chức muốn tạo vòng tròn ghép cặp hoặc đối đầu giữa các nhóm/đội theo cấu trúc đặc biệt.
+Trước khi mở Setup bracket, hãy kiểm tra:
 
-Dùng khi:
+- Đúng giải và đúng nội dung thi đấu.
+- Danh sách VĐV đã có trong nội dung.
+- Tên các đội dự kiến không trùng nhau.
+- Mỗi VĐV chỉ thuộc một đội.
+- Có ít nhất 2 đội và không quá 8 đội.
+- Mỗi đội có ít nhất 1 thành viên.
+- Với rubber đôi hoặc đôi nam nữ, mỗi đội cần ít nhất 2 thành viên để xếp một cặp hợp lệ.
+- Điều lệ đã xác định mục tiêu số trận/VĐV và cách xử lý trường hợp hòa Team Tie.
 
-- Cần chia VĐV thành nhóm/đội trước.
-- Các đội hoặc nhóm gặp nhau theo vòng tròn.
-- Cần sắp xếp lại nhóm, thứ tự hoặc cặp đối đầu trước khi tạo lịch.
+Bạn có thể bổ sung VĐV tài khoản Sportix hoặc VĐV guest theo hướng dẫn [Quản lý VĐV đăng ký](/tournament/organizer-manage-athletes).
 
-Luồng khuyến nghị:
+<Warning>
+Hãy khóa danh sách đăng ký và kiểm tra đúng nội dung trước khi tạo lịch. Thay đổi đội hoặc thành viên sau khi đã có lịch có thể làm lineup cần được kiểm tra lại.
+</Warning>
 
-1. Chuẩn bị danh sách VĐV hoặc đội.
-2. Tạo nhóm/đội theo cấu trúc mong muốn.
-3. Kiểm tra số lượng mỗi nhóm.
-4. Tạo lịch vòng tròn.
-5. Xem preview toàn bộ lượt đấu.
-6. Chỉ mở Bracket Manager khi lịch đã được xác nhận.
+## Tạo Team Battle từng bước
 
-## Checklist trước khi thi đấu
+<Steps>
+  <Step title="Chọn nội dung thi đấu">
+    Trong dashboard giải, mở **Setup bracket** và chọn đúng nội dung cần tổ chức theo thể thức đồng đội.
 
-- Mỗi đội đủ thành viên.
-- Lineup từng rubber đã được xác nhận.
-- Không có VĐV bị xếp trùng ngoài luật.
-- Lịch cross-team đã được đội vận hành kiểm tra.
-- Người nhập điểm hiểu cách mở rubber và chốt trận đội.
-- Podium/team winner đã được thống nhất cách tính.
+    Sportix dùng hình thức của nội dung để tạo rubber:
+
+    - **Cá nhân**: mỗi bên dùng 1 VĐV.
+    - **Đôi**: mỗi bên dùng 2 VĐV.
+    - **Đôi nam nữ**: mỗi bên dùng 2 VĐV.
+  </Step>
+  <Step title="Chọn cấu trúc Team Battle">
+    Ở bước **Cấu trúc**, chọn **Team Battle** — “Chia VĐV thành các đội, thi đấu vòng tròn giữa các đội”.
+
+    Nhập số đội từ **2 đến 8**. Nếu số đội là số lẻ, mỗi lượt lịch sẽ có một đội nghỉ BYE.
+  </Step>
+  <Step title="Chia đội và phân VĐV">
+    Ở bước **Chia đội**:
+
+    1. Đặt tên riêng cho từng đội.
+    2. Tìm và chọn VĐV vào đúng đội.
+    3. Kiểm tra số VĐV đã chọn của từng đội.
+    4. Dùng **Chia đều VĐV đăng ký** nếu muốn Sportix phân danh sách tuần tự và tương đối đều giữa các đội.
+
+    Khi chọn một VĐV sang đội mới, Sportix sẽ chuyển VĐV đó khỏi đội cũ. Tên đội không được để trống hoặc trùng nhau.
+  </Step>
+  <Step title="Chọn cách xếp đội hình">
+    Ở bước **Thiết lập thi đấu**, chọn một trong hai cách:
+
+    - **Tự động · Khuyên dùng**: Sportix chọn VĐV/cặp cho từng rubber và cân bằng số lần ra sân.
+    - **BTC tự xếp**: Sportix tạo lịch và các rubber trống; Ban tổ chức tự chọn lineup sau khi hoàn tất.
+
+    Khi chọn tự động, bạn có thể bật **Cân bằng theo seed/ELO**. Sportix vẫn ưu tiên chia đều số lần ra sân; sau đó ghép các VĐV/cặp có sức mạnh gần nhau. VĐV thiếu seed/ELO sẽ dùng thứ tự trong đội.
+  </Step>
+  <Step title="Đặt mục tiêu số trận mỗi VĐV">
+    Nhập **Số trận mong muốn mỗi VĐV**. Sportix tự tìm số chu kỳ và số rubber/Team Tie gần nhất để mọi VĐV đạt ít nhất mục tiêu.
+
+    Khu dự kiến sẽ hiển thị:
+
+    - Số chu kỳ và lượt lịch.
+    - Số rubber trong mỗi Team Tie.
+    - Tổng Team Tie và tổng trận con.
+    - Khoảng số trận ít nhất–nhiều nhất của VĐV trong từng đội.
+    - Lượt nghỉ BYE nếu có.
+
+    Sportix tìm cấu hình trong giới hạn tối đa **20 chu kỳ** và **9 rubber cho mỗi Team Tie**.
+  </Step>
+  <Step title="Kiểm tra và hoàn tất">
+    Ở bước **Kiểm tra**, rà lại tên đội, thành viên, mục tiêu số trận, số Team Tie, số rubber và cách xếp lineup.
+
+    Khi mọi thông tin đã đúng, đến bước **Hoàn tất** và bấm **Hoàn tất & tạo lịch thi đấu**. Sportix sẽ tạo đồng thời:
+
+    - Đội và danh sách thành viên.
+    - Lịch vòng tròn giữa các đội.
+    - Các Team Tie và rubber.
+    - Lineup ban đầu nếu đã chọn chế độ tự động.
+  </Step>
+</Steps>
+
+<Warning>
+**Hoàn tất & tạo lịch thi đấu** là bước đầu tiên ghi dữ liệu Team Battle vào hệ thống. Nếu nội dung đã có lịch, Sportix sẽ yêu cầu bạn reset bảng đấu trước khi thiết lập lại. Không reset khi đã có kết quả chính thức nếu chưa sao lưu và thống nhất phương án xử lý.
+</Warning>
+
+## Cách đọc phần dự kiến
+
+Ví dụ phần kiểm tra hiển thị:
+
+- 4 đội.
+- 1 chu kỳ, 3 lượt lịch.
+- 2 rubber mỗi Team Tie.
+- 6 Team Tie, 12 trận con.
+- Mỗi VĐV dự kiến 2–3 trận.
+
+Điều này có nghĩa mỗi đội gặp ba đội còn lại một lần. Mỗi lần hai đội gặp nhau sẽ có hai rubber. Do sĩ số đội có thể khác nhau, số lần ra sân thực tế giữa các VĐV có thể lệch một trận.
+
+<Info>
+Mục tiêu số trận/VĐV là số tối thiểu để Sportix tính lịch, không phải cam kết mọi VĐV luôn có số trận tuyệt đối bằng nhau. Hãy kiểm tra khoảng **dự kiến min–max** trước khi hoàn tất.
+</Info>
+
+## Xếp lịch theo slot và sân
+
+Sau khi Team Battle đã có lịch, khu **Xếp lịch tự động** xuất hiện trong Setup bracket.
+
+1. Nhập số sân có thể sử dụng, từ **1 đến 100**.
+2. Bấm **Xếp lịch**.
+3. Kiểm tra số trận, số slot và số sân trong kết quả.
+4. Kiểm tra cảnh báo VĐV phải đánh hai slot liên tiếp.
+
+Sportix ưu tiên:
+
+1. Không để cùng một đội/VĐV xuất hiện ở hai sân trong cùng slot.
+2. Dùng tối đa số sân đang có để rút ngắn lịch.
+3. Hạn chế VĐV phải đánh ở hai slot liên tiếp khi có phương án khác.
+
+<Info>
+**Vòng thi đấu** và **slot thi đấu** không giống nhau. Vòng thể hiện thứ tự các đội gặp nhau; slot là ca sân thực tế. Một vòng có thể trải qua nhiều slot.
+</Info>
+
+<Warning>
+Cảnh báo đánh hai slot liên tiếp không chặn việc tạo lịch. Đây là tình huống có thể không tránh được khi BTC ưu tiên dùng nhiều sân hoặc đội có ít thành viên. Hãy xem từng slot được cảnh báo và điều chỉnh vận hành, thời gian nghỉ hoặc lineup nếu cần.
+</Warning>
+
+## Quản lý lineup trong Team Tie
+
+Sau khi hoàn tất, bấm **Mở quản lý thi đấu** và mở một Team Tie để vào **Quản trị đối kháng đồng đội**.
+
+### Tạo đội hình nhanh
+
+Nút **Tạo đội hình** cung cấp ba cách:
+
+- **Tuần tự**: ưu tiên thứ tự VĐV trong đội.
+- **Ngẫu nhiên**: tạo lineup ngẫu nhiên.
+- **Tối ưu tránh trùng cặp**: ưu tiên đa dạng cặp đấu giữa các rubber.
+
+Đây là lineup khởi tạo. Ban tổ chức vẫn nên kiểm tra từng rubber trước khi thi đấu.
+
+### Chỉnh từng rubber
+
+Với mỗi rubber, bạn có thể:
+
+- Chọn VĐV 1 và VĐV 2 của từng đội.
+- Dùng preset cặp đôi như vị trí 1–2, 1–3 hoặc 1–4 nếu đội đủ người.
+- Thêm ghi chú đội hình.
+- Bấm **Lưu đội hình**.
+- Khóa rubber sau khi hai đội đã xác nhận lineup.
+
+Sportix cảnh báo khi lineup trùng với rubber khác nhưng vẫn cho phép lưu. Ban tổ chức cần quyết định theo điều lệ giải.
+
+<Tip>
+Sau khi đội trưởng hai bên xác nhận lineup, hãy khóa rubber để tránh thay đổi nhầm trong lúc bàn thư ký nhập điểm.
+</Tip>
+
+### Thêm hoặc xóa trận con
+
+Ban tổ chức có thể bấm **Thêm trận** để bổ sung rubber đơn, đôi hoặc đôi nam nữ và chọn lineup ngay khi tạo.
+
+Bạn chỉ có thể xóa rubber khi:
+
+- Rubber chưa bị khóa.
+- Rubber chưa hoàn thành.
+- Rubber chưa có tỉ số.
+
+## Nhập tỉ số rubber
+
+Trong Bracket Manager, bấm vào rubber cần cập nhật.
+
+1. Chọn thể thức **BO1**, **BO3** hoặc **BO5**.
+2. Nhập điểm của hai bên theo từng set.
+3. Kiểm tra VĐV/cặp và đội thắng được Sportix hiển thị.
+4. Nhập số sân nếu cần.
+5. Lưu kết quả.
+
+Sportix tự tính số set thắng và cập nhật kết quả Team Tie. Nếu nhập nhầm, dùng thao tác reset tỉ số rồi nhập lại.
+
+<Warning>
+Rubber không thể hòa khi chốt thắng/thua. Với cầu lông/pickleball, điểm của set phải đạt điều kiện thắng theo cấu hình nội dung trước khi Sportix xác định bên thắng.
+</Warning>
+
+## Cách tính kết quả Team Tie và bảng xếp hạng
+
+Khi các rubber có kết quả, Sportix cộng số rubber thắng của hai đội:
+
+- Đội có nhiều rubber thắng hơn sẽ thắng Team Tie.
+- Nếu hai đội có số rubber thắng bằng nhau, Team Tie được tính hòa.
+
+Điểm bảng xếp hạng Team Battle:
+
+- Thắng Team Tie: **1 điểm**.
+- Hòa Team Tie: **0,5 điểm**.
+- Thua Team Tie: **0 điểm**.
+
+Khi bằng điểm, Sportix xếp thứ hạng lần lượt theo:
+
+1. Hiệu số rubber thắng – thua.
+2. Tổng số rubber thắng.
+3. Tổng số Team Tie thắng.
+
+<Info>
+Nếu điều lệ giải của bạn dùng thang điểm hoặc tiêu chí phụ khác, hãy công bố rõ với các đội. Bảng Team Battle hiện tại của Sportix áp dụng quy tắc trên.
+</Info>
+
+## Quy trình vận hành khuyến nghị cho BTC
+
+### Trước ngày thi đấu
+
+- Chốt danh sách VĐV và đội.
+- Kiểm tra mục tiêu số trận/VĐV.
+- Tạo Team Battle và xếp slot/sân.
+- Kiểm tra toàn bộ lineup tự động.
+- Gửi lịch và quy định nộp lineup cho đội trưởng.
+
+### Trước mỗi Team Tie
+
+- Xác nhận hai đội có mặt.
+- Kiểm tra lineup từng rubber.
+- Xử lý VĐV vắng mặt theo điều lệ.
+- Khóa lineup đã được hai bên xác nhận.
+- Gán đúng sân cho từng rubber.
+
+### Trong và sau Team Tie
+
+- Nhập tỉ số từng rubber ngay khi hoàn tất.
+- Kiểm tra đội thắng chung cuộc.
+- Đối chiếu bảng xếp hạng sau mỗi lượt.
+- Chỉ reset tỉ số khi có người phụ trách xác nhận.
+
+## Checklist trước giờ thi đấu
+
+- Đã chọn đúng nội dung Team Battle.
+- Mỗi VĐV chỉ nằm trong một đội.
+- Tên đội và thành viên đã được xác nhận.
+- Số rubber/Team Tie phù hợp với điều lệ.
+- Lineup từng rubber đã đủ người.
+- Các rubber đã chốt được khóa.
+- Slot và sân không bị trùng nguồn lực.
+- Cảnh báo đánh liên tiếp đã được xử lý.
+- Bàn thư ký hiểu cách nhập và reset tỉ số.
+- Cách tính điểm, tiêu chí xếp hạng và xử lý hòa đã được công bố.
 
 ## Lỗi thường gặp
 
 <AccordionGroup>
-  <Accordion title="Không thấy lựa chọn team tie">
-    Kiểm tra nội dung thi đấu có được cấu hình theo chế độ đồng đội không. Nếu nội dung là đơn/đôi thường, hệ thống sẽ hiển thị luồng bracket thường.
+  <Accordion title="Không thấy lựa chọn Team Battle">
+    Kiểm tra bạn đang ở đúng nội dung và bước **Cấu trúc** của Setup bracket. Nếu nội dung đã có bracket/lịch, hãy kiểm tra dữ liệu hiện tại trước khi reset và thiết lập lại.
   </Accordion>
 
-  <Accordion title="Lineup bị thiếu người">
-    Kiểm tra đội đã đủ thành viên chưa và VĐV có bị xếp vào rubber khác không. Với nội dung có luật giới hạn số lượt, cần rà lại từng rubber.
+  <Accordion title="Không thể chuyển sang bước tiếp theo sau khi chia đội">
+    Mỗi đội phải có tên riêng và ít nhất một thành viên. Tên đội không được để trống hoặc trùng nhau; một VĐV không thể thuộc nhiều đội.
   </Accordion>
 
-  <Accordion title="Điểm rubber đã nhập nhưng đội thắng chưa đúng">
-    Kiểm tra tất cả rubber bắt buộc đã hoàn tất chưa, sau đó refresh Bracket Manager để đồng bộ trạng thái.
+  <Accordion title="Không thể tạo lịch đạt số trận mong muốn">
+    Sportix không tìm được cấu hình phù hợp trong giới hạn 20 chu kỳ và 9 rubber/Team Tie. Hãy giảm mục tiêu số trận/VĐV, tăng thành viên phù hợp hoặc điều chỉnh số đội.
   </Accordion>
 
-  <Accordion title="Có thể đổi lineup sau khi đã bắt đầu không?">
-    Chỉ đổi khi điều lệ cho phép và trận/rubber chưa bị khóa kết quả. Nếu đã nhập điểm, hãy thống nhất với Ban tổ chức trước khi sửa.
+  <Accordion title="Hoàn tất báo nội dung đã có lịch thi đấu">
+    Team Battle chỉ được hoàn tất khi nội dung chưa có lịch. Hãy kiểm tra lịch/kết quả hiện tại và chỉ reset bảng đấu khi Ban tổ chức đã xác nhận việc thiết lập lại.
+  </Accordion>
+
+  <Accordion title="Lineup trống sau khi tạo lịch">
+    Bạn đã chọn **BTC tự xếp**. Mở từng Team Tie, dùng **Tạo đội hình** hoặc chọn VĐV/cặp cho từng rubber rồi bấm **Lưu đội hình**.
+  </Accordion>
+
+  <Accordion title="Sportix cảnh báo đội hình trùng">
+    Cùng một lineup đang được dùng ở nhiều rubber. Cảnh báo không chặn lưu; hãy giữ hoặc đổi đội hình theo điều lệ của giải.
+  </Accordion>
+
+  <Accordion title="Không thể xóa một rubber">
+    Rubber đã bị khóa, đã hoàn thành hoặc đã có tỉ số. Nếu cần sửa, hãy kiểm tra quyền và trạng thái, mở khóa hoặc reset tỉ số theo đúng quy trình trước.
+  </Accordion>
+
+  <Accordion title="Có cảnh báo VĐV đánh hai slot liên tiếp">
+    Sportix vẫn tạo lịch để sử dụng sân hiệu quả. Hãy kiểm tra slot được cảnh báo, sau đó cân nhắc đổi lineup, giảm số sân chạy đồng thời hoặc bố trí thêm thời gian nghỉ.
+  </Accordion>
+
+  <Accordion title="Đã nhập điểm rubber nhưng Team Tie chưa có đội thắng">
+    Kiểm tra các rubber cần thiết đã có kết quả chưa. Nếu tổng số rubber thắng đang bằng nhau, Team Tie sẽ được tính hòa. Sau đó tải lại Bracket Manager để xác nhận dữ liệu mới nhất.
   </Accordion>
 </AccordionGroup>
+
+## Xem tiếp
+
+- [Setup bracket](/tournament/organizer-bracket-setup)
+- [Bracket Manager](/tournament/organizer-bracket-manager)
+- [Quản lý VĐV đăng ký](/tournament/organizer-manage-athletes)
+- [Hoàn tất giải và podium](/tournament/organizer-finish-and-podium)
