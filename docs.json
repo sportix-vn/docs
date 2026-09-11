@@ -59,6 +59,7 @@
               "tournament/organizer-manage-athletes",
               "tournament/organizer-bracket-setup",
               "tournament/organizer-bracket-manager",
+              "tournament/organizer-court-coordination",
               "tournament/organizer-draw-ceremony",
               "tournament/organizer-team-tie-cross-team",
               "tournament/organizer-hud-live-score",

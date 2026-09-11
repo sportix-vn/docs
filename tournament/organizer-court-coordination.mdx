@@ -1,0 +1,173 @@
+---
+title: "Điều phối sân"
+description: "Playbook giúp Ban tổ chức vận hành sân thi đấu, đưa trận vào sân và xử lý các tình huống trong ngày thi đấu"
+---
+
+Điều phối sân giúp Ban tổ chức quản lý trạng thái các sân thi đấu, đưa trận vào sân, theo dõi trận đang diễn ra và chuyển nhanh sang trận tiếp theo.
+
+Tính năng này không bắt buộc để nhập điểm hoặc vận hành bracket. Đây là lớp hỗ trợ riêng cho ngày thi đấu, khi BTC cần biết sân nào trống, trận nào sẵn sàng và trận nào chưa thể lên sân.
+
+## Trước khi bắt đầu
+
+Kiểm tra nhanh trước khi dùng Điều phối sân:
+
+- Đã tạo bảng đấu và có danh sách trận.
+- Đã bật **Điều phối sân** trong cấu hình giải.
+- Đã khai báo số sân sử dụng.
+- Nên cấu hình giờ bắt đầu và thời lượng dự kiến mỗi trận.
+- BTC/staff đã có quyền quản lý giải.
+
+<Tip>
+Nếu chỉ cần nhập điểm từng trận, bạn vẫn có thể dùng Bracket Manager hoặc màn trọng tài mà không cần bật Điều phối sân.
+</Tip>
+
+## Hiểu màn hình Điều phối sân
+
+Màn Điều phối sân có ba vùng BTC cần nắm:
+
+| Vùng | BTC dùng để làm gì |
+| --- | --- |
+| **Sơ đồ sân** | Xem sân nào trống, sân nào đang có trận, sân nào đang chờ bắt đầu. |
+| **Danh sách trận** | Xem trận chờ, trận sẵn sàng, trận đang thi đấu và trận chưa thể lên sân. |
+| **Công cụ điều phối** | Xếp lịch tự động, xếp sân trống, đưa trận vào sân hoặc trả trận về hàng chờ. |
+
+Khi giải có nhiều nội dung, hãy chọn đúng nội dung trước khi điều phối. Một sân có thể đang bị chiếm bởi nội dung khác, nên không chỉ nhìn riêng danh sách trận của nội dung hiện tại.
+
+## Luồng vận hành khuyến nghị
+
+### Bước 1 — Lập lịch dự kiến
+
+Dùng **Xếp lịch tự động** để Sportix tạo:
+
+- Thứ tự trận.
+- Sân dự kiến.
+- Khung giờ dự kiến.
+
+Lịch này là lịch dự kiến. BTC vẫn có thể điều phối linh hoạt theo tình hình thực tế.
+
+<Info>
+Thời gian trên lịch không phải timetable cứng. Nếu một sân kết thúc sớm hơn, BTC có thể đưa một trận đang sẵn sàng vào sân ngay, không cần chờ đến giờ dự kiến.
+</Info>
+
+### Bước 2 — Theo dõi sân trống
+
+Khi một trận kết thúc, sân có thể nhận trận mới. BTC nên nhìn **Sơ đồ sân** để biết sân nào đang trống hoặc đang chờ bắt đầu.
+
+### Bước 3 — Chọn trận tiếp theo
+
+BTC có hai cách:
+
+- **Xếp sân trống**: Sportix chọn trận phù hợp tiếp theo cho các sân đang trống.
+- **Xếp thủ công**: BTC chọn một trận cụ thể rồi đưa vào sân mong muốn.
+
+Nếu trận không xuất hiện trong hàng chờ, hãy kiểm tra trận đó đã có lịch chưa, VĐV đã đủ điều kiện thi đấu chưa hoặc sân có đang bị nội dung khác sử dụng không.
+
+### Bước 4 — Bắt đầu trận
+
+Chỉ bấm bắt đầu khi:
+
+- VĐV đã có mặt.
+- Đúng sân.
+- BTC/trọng tài đã sẵn sàng.
+
+Nếu trận đã được xếp nhưng VĐV chưa có mặt, hãy đưa trận về hàng chờ và chọn trận khác để tránh để sân trống lâu.
+
+### Bước 5 — Nhập điểm và kết thúc
+
+Trọng tài nhập điểm trên màn trọng tài. Khi trận kết thúc, sân được giải phóng và BTC tiếp tục điều phối trận kế tiếp.
+
+## Trạng thái BTC cần hiểu
+
+| Trạng thái | Ý nghĩa với BTC |
+| --- | --- |
+| **Chưa lên lịch** | Trận chưa có slot/sân dự kiến. |
+| **Hàng chờ** | Trận đang chờ được đưa vào sân phù hợp. |
+| **Sẵn sàng** | Trận có thể đưa vào sân. |
+| **Đang thi đấu** | Sân đang bị chiếm bởi một trận. |
+| **Hoàn thành** | Trận đã xong, sân có thể nhận trận tiếp theo. |
+| **Chưa sẵn sàng** | Trận chưa đủ điều kiện để thi đấu. |
+
+## Một sân chỉ chạy một trận
+
+<Warning>
+Một sân chỉ được dùng cho một trận tại cùng thời điểm.
+</Warning>
+
+Ví dụ: nếu **Sân 2** đang có trận của **Nội dung Đôi nam**, BTC không thể xếp thêm trận của **Nội dung Đôi nữ** vào Sân 2 cho đến khi trận hiện tại kết thúc hoặc được đưa khỏi sân.
+
+Mental model đơn giản: sân trống mới nhận trận mới. Nội dung thi đấu khác nhau vẫn dùng chung tài nguyên sân.
+
+## Thời gian nghỉ của VĐV
+
+Nếu một VĐV vừa thi đấu xong và chưa đủ thời gian nghỉ theo cấu hình của giải, Sportix có thể không cho BTC đưa trận tiếp theo của VĐV đó vào sân.
+
+Khi lập lịch tự động, Sportix cũng có thể cảnh báo các trường hợp VĐV phải thi đấu liên tiếp. BTC nên rà soát lại lịch trước khi công bố hoặc bắt đầu điều phối.
+
+<Tip>
+Nếu giải muốn chạy nhanh hơn, BTC vẫn nên cân bằng giữa việc tận dụng sân trống và thời gian hồi phục của VĐV.
+</Tip>
+
+## Trọng tài và màn nhập điểm
+
+Tách hai khái niệm:
+
+- **Trọng tài theo sân**: người đang phụ trách sân đó.
+- **Màn trọng tài**: giao diện nhập điểm cho trận đang diễn ra.
+
+Chỉ chia sẻ đường dẫn nhập điểm cho trọng tài hoặc người được BTC phân công. Tránh gửi đường dẫn này vào nhóm công khai của giải.
+
+## Tình huống thường gặp
+
+<AccordionGroup>
+  <Accordion title="Sân trống nhưng không có trận nào được xếp">
+    Kiểm tra trận có đang sẵn sàng không, VĐV có cần nghỉ thêm không hoặc nội dung hiện tại còn trận đã lên lịch không.
+  </Accordion>
+
+  <Accordion title="Không thể đưa trận vào sân">
+    Sân có thể đang được nội dung khác sử dụng, trận đã được xếp sân trước đó hoặc VĐV chưa đủ điều kiện thi đấu.
+  </Accordion>
+
+  <Accordion title="Trận đã được xếp nhưng VĐV chưa có mặt">
+    Đưa trận về hàng chờ rồi chọn trận khác. Khi VĐV có mặt, BTC có thể điều phối lại.
+  </Accordion>
+
+  <Accordion title="Một sân kết thúc sớm">
+    Có thể xếp trận tiếp theo ngay nếu trận đó đã sẵn sàng. Không cần chờ đến giờ dự kiến trên lịch.
+  </Accordion>
+
+  <Accordion title="BTC chọn nhầm sân">
+    Đưa trận về hàng chờ rồi điều phối lại vào đúng sân.
+  </Accordion>
+
+  <Accordion title="Đã nhập kết quả nhưng cần sửa">
+    Hạn chế reset tỉ số. Chỉ sửa khi BTC đã xác nhận đúng lý do và người phụ trách kết quả đồng ý.
+  </Accordion>
+</AccordionGroup>
+
+## Checklist vận hành
+
+### Trước ngày thi đấu
+
+- Bật **Điều phối sân**.
+- Cấu hình số sân.
+- Chạy **Xếp lịch tự động**.
+- Kiểm tra các cảnh báo.
+- Test màn trọng tài cho ít nhất một trận.
+
+### Trong ngày thi đấu
+
+- Theo dõi **Sơ đồ sân**.
+- Đưa trận sẵn sàng vào sân.
+- Bắt đầu trận khi VĐV/trọng tài đã sẵn sàng.
+- Theo dõi điểm.
+- Khi trận kết thúc, điều phối trận tiếp theo.
+
+### Khi có thay đổi
+
+Ưu tiên điều chỉnh trên màn **Điều phối sân** thay vì cố giữ nguyên lịch dự kiến. Lịch dự kiến giúp BTC có kế hoạch; điều phối sân giúp giải chạy theo thực tế.
+
+## Xem tiếp
+
+- [Dashboard quản lý giải đấu](/tournament/organizer-dashboard)
+- [Bracket Manager](/tournament/organizer-bracket-manager)
+- [HUD & Live Score](/tournament/organizer-hud-live-score)
