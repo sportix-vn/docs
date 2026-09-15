@@ -1,113 +1,57 @@
 ---
-title: "Quản lý VĐV đăng ký"
-description: "Theo dõi đăng ký, lọc danh sách và xử lý thao tác quản trị VĐV cho giải đấu"
+title: "Quản lý danh sách VĐV"
+description: "Lọc, duyệt và cập nhật đăng ký VĐV trong Dashboard giải đấu."
 ---
 
-## Mở khu quản lý VĐV
+Khu **Danh sách VĐV** giúp BTC kiểm tra người tham gia theo nội dung, đơn vị, đội và trạng thái đăng ký.
 
-<Frame>
-  <img src="/images/tournament/organizer-athletes.svg" alt="Minh họa bảng danh sách VĐV với bộ lọc và thao tác hàng loạt." />
-</Frame>
+## Cách tìm VĐV
 
-Vào trang chi tiết giải đấu, chọn tab danh sách VĐV để xem toàn bộ đăng ký.
+1. Trong Dashboard giải đấu, chọn **Danh sách VĐV**.
+2. Nhập tên cần tìm hoặc chọn bộ lọc phù hợp.
+3. Chọn **Tìm** để áp dụng.
+4. Chọn **Reset** để xóa các bộ lọc đang dùng.
 
-Các trạng thái như `pending`, `confirmed`, `unpaid`, `paid` được giải thích tại [Glossary Tournament](/tournament/organizer-glossary).
+Các bộ lọc có thể gồm **Đơn vị**, **Nội dung**, **Đội**, **Trạng thái đăng ký** và **Trạng thái thanh toán**, tùy cấu hình giải.
 
-## Bạn có thể làm gì?
+## Cách xử lý đăng ký
 
-- Tìm nhanh theo tên
-- Lọc theo nội dung thi đấu
-- Lọc theo trạng thái thanh toán
-- Thêm nhanh VĐV guest khi có danh sách ngoài hệ thống
-- Sửa thông tin guest nếu nhập nhầm
-- Duyệt hoặc từ chối thanh toán hàng loạt
-- Copy/add đăng ký sang nội dung khác khi Ban tổ chức cần điều chỉnh
-- Xuất danh sách (khi cần làm việc offline)
+BTC có thể chọn một hoặc nhiều dòng để thực hiện thao tác được phép:
 
-## Thao tác hàng loạt
+- xác nhận đăng ký;
+- từ chối thanh toán;
+- xóa đăng ký;
+- thêm VĐV sang nội dung khác.
 
-Với quyền organizer, bạn có thể chọn nhiều dòng để:
+Kiểm tra số dòng đã chọn trước khi xác nhận thao tác hàng loạt.
 
-- Duyệt thanh toán hàng loạt
-- Từ chối thanh toán hàng loạt
-- Kiểm tra nhanh số lượng đăng ký theo nội dung trước khi setup bracket
+## Cách thêm hoặc sửa VĐV guest
 
-<Info>
-Tính năng duyệt/từ chối hàng loạt giúp xử lý nhanh khi số lượng đăng ký lớn hoặc khi Ban tổ chức đối soát chuyển khoản theo batch.
-</Info>
+- Chọn **Thêm nhanh VĐV** để nhập VĐV hoặc cặp guest bằng danh sách văn bản.
+- Mở menu của một dòng và chọn **Cập nhật thông tin** để sửa tên, năm sinh, giới tính, quốc gia, liên hệ, ELO hoặc đơn vị.
+- Với nội dung đôi còn thiếu người, chọn thao tác thêm VĐV thứ hai.
 
-## Thêm nhanh VĐV guest
+## Cách xuất danh sách
 
-VĐV guest là đăng ký do Ban tổ chức nhập thay, thường dùng cho danh sách ngoài hệ thống, đăng ký tại sân hoặc VĐV chưa có tài khoản Sportix.
+Áp dụng bộ lọc cần dùng rồi chọn **Xuất**. Sportix sẽ tải danh sách VĐV phù hợp với phạm vi hiện tại.
 
-Luồng khuyến nghị:
+## Kiểm tra sau khi hoàn tất
 
-1. Chọn đúng nội dung thi đấu.
-2. Bấm thêm nhanh VĐV guest.
-3. Nhập tên VĐV hoặc cặp VĐV theo hướng dẫn trên màn hình.
-4. Kiểm tra dòng hợp lệ và dòng lỗi.
-5. Lưu danh sách.
-6. Kiểm tra lại danh sách VĐV của nội dung.
+- Số lượng VĐV phù hợp với nội dung đang chọn.
+- Trạng thái đăng ký và thanh toán hiển thị đúng.
+- VĐV đôi có đủ hai người khi nội dung yêu cầu.
 
-Với nội dung đôi/mixed, hãy kiểm tra đủ 2 người trong mỗi cặp trước khi tạo bracket.
+## Nếu có vấn đề
 
-<Warning>
-Nếu đã tạo bracket, thêm guest có thể làm danh sách và slot cần kiểm tra lại. Hãy rà soát preview bracket sau khi thêm.
-</Warning>
+### Không thấy VĐV vừa nhập
 
-## Sửa thông tin guest
+Chọn **Reset** để bỏ bộ lọc, sau đó kiểm tra lại đúng nội dung thi đấu.
 
-Khi guest bị sai tên, thiếu partner hoặc sai nội dung, Ban tổ chức nên sửa trước khi bốc thăm.
+### Không thể sửa một VĐV
 
-Nên kiểm tra:
+Một số thao tác chỉ dành cho BTC và có thể chỉ áp dụng cho đăng ký guest.
 
-- Tên hiển thị trên danh sách public.
-- Nội dung thi đấu đang đăng ký.
-- Partner của nội dung đôi/mixed.
-- Trạng thái thanh toán nếu giải có thu phí.
+## Tiếp theo
 
-Nếu guest đã xuất hiện trong bracket, hãy kiểm tra Bracket Manager hoặc Setup bracket sau khi sửa để đảm bảo tên đã đồng bộ đúng.
-
-## Copy hoặc thêm đăng ký sang nội dung khác
-
-Trong một số giải, Ban tổ chức cần đưa VĐV/cặp sang nội dung khác, ví dụ từ nội dung chờ sang nội dung chính thức hoặc thêm một VĐV vào nhiều nội dung.
-
-Trước khi copy/add:
-
-- Kiểm tra điều lệ có cho phép VĐV đánh nhiều nội dung không.
-- Kiểm tra phí và trạng thái thanh toán.
-- Kiểm tra nội dung mới còn slot không.
-- Kiểm tra bracket của nội dung mới chưa bị khóa vận hành.
-
-## Claim registration
-
-Nếu VĐV guest sau đó tạo tài khoản hoặc đăng nhập Sportix, Ban tổ chức có thể hướng dẫn VĐV claim đăng ký để gắn đăng ký đó với tài khoản thật.
-
-Claim registration giúp:
-
-- VĐV xem lịch/trận của mình thuận tiện hơn.
-- Ban tổ chức giảm dữ liệu guest bị rời rạc.
-- Thông tin hồ sơ VĐV đồng bộ tốt hơn sau giải.
-
-<Tip>
-Nếu danh sách guest nhiều, hãy gửi hướng dẫn claim sau khi danh sách đã ổn định để tránh người chơi claim nhầm đăng ký.
-</Tip>
-
-## Danh sách VĐV public
-
-Nếu giải bật **Công khai danh sách VĐV**, người xem có thể mở danh sách tham gia trên trang public của giải.
-
-Public list chỉ nên hiển thị thông tin cần thiết cho cộng đồng theo dõi. Thông tin liên hệ, ghi chú thanh toán và dữ liệu quản trị vẫn nên được xử lý trong khu organizer.
-
-## Gợi ý vận hành
-
-- Chốt danh sách thanh toán trước khi Tạo Bracket.
-- Tránh chỉnh dữ liệu sát giờ bốc thăm để hạn chế sai lệch.
-- Giao 1 người phụ trách riêng phần đăng ký để đồng bộ thông tin.
-- Với giải nhiều nội dung, xuất danh sách sau khi đã chốt để team sân có bản đối chiếu.
-
-## Xem tiếp
-
-- [Setup bracket sau khi tạo giải](/tournament/organizer-bracket-setup)
-- [Bốc thăm và màn hình draw](/tournament/organizer-draw-ceremony)
-- [Cài đặt công khai danh sách VĐV](/tournament/organizer-edit-and-status)
+- [Nhập danh sách VĐV từ Excel](/tournament/organizer-import-athletes)
+- [Tạo bảng đấu](/tournament/organizer-bracket-setup)

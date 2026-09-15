@@ -1,121 +1,72 @@
 ---
-title: "Bracket Manager"
-description: "Hướng dẫn tạo bracket, nhập tỉ số và điều hành nhánh đấu cho Ban tổ chức"
+title: "Nhập tỉ số trận đấu"
+description: "Mở đúng trận, cập nhật tỉ số và kiểm tra kết quả đã lưu."
 ---
 
-<Info>
-**Điều kiện trước khi bắt đầu**
+Hướng dẫn BTC nhập tỉ số từ **Nhập điểm** trong Dashboard giải đấu.
 
-- Bạn là người tạo giải (organizer) của giải đấu.
-- Giải đã có dữ liệu đăng ký hợp lệ theo từng nội dung.
+## Trước khi bắt đầu
 
-Nếu bạn mới làm quen khái niệm bracket/podium, xem [Glossary Tournament](/tournament/organizer-glossary).
-</Info>
+- Nội dung đã có bảng đấu.
+- Giải đã sẵn sàng thi đấu.
+- Người nhập điểm có quyền vận hành giải.
 
-## Bước 1: Mở Bracket Manager
+## Cách thực hiện
+
+### 1. Mở Nhập điểm
+
+Trong Dashboard giải đấu, chọn **Nhập điểm**, sau đó chọn đúng nội dung và giai đoạn.
+
+### 2. Chọn trận
+
+Mở trận từ sơ đồ nhánh hoặc danh sách trận. Kiểm tra đúng VĐV/cặp, vòng đấu và sân trước khi nhập.
+
+### 3. Cập nhật tỉ số
+
+Trong hộp thoại **Cập nhật tỉ số**:
 
 <Frame>
-  <img src="/images/tournament/organizer-bracket.svg" alt="Minh họa màn hình Bracket Manager với các nhánh đấu và thao tác cập nhật kết quả." />
+  <img src="/images/tournament/organizer-dashboard-score-modal.png" alt="Hộp thoại Cập nhật tỉ số với thông tin trận, điểm hai bên và nút hoàn tất." />
 </Frame>
 
-Từ dashboard quản lý giải, chọn **Quản lý bảng đấu** trong sidebar. Đây là khu điều hành bracket, danh sách trận và nhập tỉ số khi giải đang diễn ra.
+1. Chọn set cần nhập.
+2. Dùng nút cộng, trừ hoặc nhập điểm cho hai bên.
+3. Chọn bên giao cầu nếu cần hiển thị trực tiếp.
+4. Kiểm tra điểm trước khi lưu.
 
-Nếu bạn cần nhìn tổng thể toàn dashboard trước, xem [Dashboard quản lý giải đấu](/tournament/organizer-dashboard).
+### 4. Hoàn tất trận
 
-## Bước 2: Chọn nội dung thi đấu
+Khi trận đã kết thúc, xác nhận kết quả theo hộp thoại. Với trường hợp bỏ cuộc, chấn thương hoặc walkover, dùng thao tác kết thúc sớm được hiển thị cho trận.
 
-Mỗi nội dung có bracket riêng. Hãy chọn đúng nội dung trước khi thao tác.
+### 5. Kiểm tra kết quả
 
-## Bước 3: Tạo Bracket
+Mở **Kết quả thi đấu** hoặc mở lại trận để xác nhận người thắng và tỉ số từng set đã đúng.
 
-Bạn có thể:
+## Mở màn hình cho trận
 
-- Tạo tự động
-- Hoặc tạo thủ công (manual) theo nhu cầu sắp xếp
+Từ menu thao tác của trận, BTC có thể mở các màn hình đang được bật cho giải:
 
-### Gợi ý theo loại giải
+- **TV Display** cho màn hình tại sân.
+- **OBS Overlay** cho đội livestream.
+- **Mở màn trọng tài** cho người nhập điểm tại sân.
 
-- **Giải phong trào (`amateur`)**:
-  - Ưu tiên luồng nhanh để vào thi đấu sớm.
-  - Với case 4 đội vòng tròn, bạn có thể dùng preset nhanh 2 bảng A/B rồi điều chỉnh nhẹ nếu cần.
-- **Giải chuyên nghiệp (`professional`)**:
-  - Ưu tiên kiểm tra từng bảng và slot trước khi chốt.
-  - Nên rà soát danh sách phân bảng với đội vận hành trước khi bấm tạo.
+Xem cách cấu hình tại [HUD & Live Score](/tournament/organizer-hud-live-score).
 
-<Info>
-Mục tiêu chính: giải nhỏ thì thao tác gọn, giải lớn thì kiểm soát chặt. Cùng một Bracket Manager, chỉ khác cách vận hành.
-</Info>
+## Nếu có vấn đề
 
-## Bước 4: Bắt đầu thi đấu và nhập điểm
+### Không thể nhập điểm
 
-Trong quá trình thi đấu, bạn có thể:
+Kiểm tra giải đã bắt đầu, trận có đủ VĐV/cặp và tài khoản có quyền vận hành giải.
 
-- Bắt đầu trận
-- Cập nhật tỉ số
-- Chỉnh sửa kết quả khi cần xác nhận lại
-- Mở màn trọng tài để staff nhập điểm tại sân
-- Mở nhanh TV Scoreboard hoặc OBS Overlay cho trận đang chọn
+### Chọn nhầm trận
 
-<Warning>
-Chỉ cập nhật tỉ số khi đã có xác nhận chính thức từ trọng tài/bàn thư ký.
-</Warning>
+Đóng hộp thoại mà không lưu, sau đó kiểm tra lại nội dung, giai đoạn và tên hai bên.
 
-Nếu màn hình hiển thị **Chờ bắt đầu giải đấu**, hãy dùng nút **Bắt đầu giải đấu** trước khi nhập tỉ số. Không bấm nút này nếu bạn chỉ đang rà soát bracket hoặc kiểm tra màn hình.
+### Kết quả đã lưu không đúng
 
-### Hộp thoại cập nhật tỉ số
+Mở lại trận để sửa kết quả. Kiểm tra các trận tiếp theo nếu kết quả cũ đã làm người thắng đi tiếp.
 
-Khi click vào một trận, Sportix mở hộp thoại cập nhật tỉ số. Hộp thoại này có:
+## Tiếp theo
 
-- Tab **Tỷ số** để cộng/trừ điểm và lưu kết quả.
-- Tab **Log trận đấu** để kiểm tra thao tác đã nhập.
-- Khu chọn **Bên giao cầu**.
-- Nút **Kết thúc sớm** cho trường hợp bỏ cuộc, chấn thương hoặc walkover.
-- Nút **Cập nhật tỉ số** để lưu sau khi đã kiểm tra đúng.
-
-Menu **Output** trong hộp thoại trận cho phép mở nhanh **HUD stream**, **TV Display**, **OBS Overlay** và **Mở màn trọng tài**.
-
-### Mở màn trọng tài
-
-Khi click vào một trận và mở hộp thoại cập nhật tỉ số, bấm **Output** rồi chọn **Mở màn trọng tài** để mở link nhập điểm riêng cho trận đó.
-
-Link có dạng:
-
-```text
-/referee/matches/{matchId}
-```
-
-Màn này phù hợp cho điện thoại của trọng tài hoặc bàn thư ký: cộng/trừ điểm, đổi giao cầu, hoàn tác, kết thúc trận và xem log thao tác.
-
-<Info>
-Người mở link trọng tài phải đăng nhập và có quyền staff/organizer của giải.
-</Info>
-
-### Mở link màn hình cho trận
-
-Trong cùng hộp thoại trận, bạn có thể mở nhanh:
-
-- **TV**: bảng điểm full-screen cho màn hình tại sân.
-- **OBS Overlay**: overlay livestream cho OBS/Streamlabs.
-
-Xem chi tiết cách dùng ở [HUD & Live Score](/tournament/organizer-hud-live-score).
-
-## Bước 5: Hoàn tất nhánh và chốt kết quả
-
-Sau khi hoàn tất các trận, bạn có thể chốt kết quả để hoàn thiện giải.
-
-Nếu giải đã có đủ kết quả chính thức, mở luồng hoàn tất giải để kiểm tra trận chưa xong và xác nhận podium. Xem chi tiết: [Hoàn tất giải và podium](/tournament/organizer-finish-and-podium).
-
-## Bốc thăm, team tie và nội dung đặc biệt
-
-Với giải có trình chiếu bốc thăm, dùng [Bốc thăm và màn hình draw](/tournament/organizer-draw-ceremony) trước khi vào thi đấu.
-
-Với nội dung đồng đội, cross-team hoặc nhiều rubber, xem [Team tie và cross-team round robin](/tournament/organizer-team-tie-cross-team) để kiểm tra lineup và cách nhập điểm trận con.
-
-Với giải cần vận hành nhiều sân cùng lúc, xem [Điều phối sân](/tournament/organizer-court-coordination) để biết cách đưa trận vào sân, xử lý hàng chờ và chuyển nhanh sang trận kế tiếp.
-
-## Lưu ý vận hành
-
-- Khóa đăng ký trước khi Tạo Bracket để tránh phát sinh thay đổi.
-- Phân quyền rõ người nhập điểm trong suốt thời gian thi đấu.
-- Kiểm tra lại trận bán kết/chung kết trước khi chốt podium.
-- Không chốt giải khi còn trận ảnh hưởng podium chưa được xác nhận.
+- [Xem kết quả thi đấu](/tournament/organizer-results)
+- [Điều phối sân](/tournament/organizer-court-coordination)
