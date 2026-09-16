@@ -1,94 +1,88 @@
 ---
-title: "Giới thiệu"
-description: "Tài liệu chính thức cho người dùng Sportix"
+title: "Tài liệu Sportix"
+description: "Chọn vai trò của bạn để tìm hướng dẫn phù hợp và bắt đầu nhanh với Sportix."
+mode: "custom"
 ---
 
-## Chào mừng bạn đến với Sportix Docs
+<main className="mx-auto max-w-4xl px-6 py-16 lg:py-24">
+  <header className="mx-auto mb-12 max-w-2xl text-center">
+    <h1 className="text-4xl font-semibold tracking-tight text-gray-950 dark:text-white">
+      Tài liệu Sportix
+    </h1>
+    <p className="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-400">
+      Chọn vai trò của bạn để tìm hướng dẫn phù hợp và bắt đầu nhanh với Sportix.
+    </p>
+  </header>
 
-Bạn có thể dùng bộ tài liệu này để bắt đầu nhanh với các tính năng chính của Sportix, đặc biệt là luồng dành cho Huấn luyện viên (Coach).
+  <div className="grid gap-6 sm:grid-cols-2">
+    <a
+      href="/tournament/organizer-quickstart"
+      className="group block rounded-2xl border border-gray-200 p-4 no-underline transition hover:border-green-500 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-green-600 dark:border-gray-800"
+    >
+      <div className="flex h-48 items-center justify-center rounded-xl bg-green-50 dark:bg-green-950">
+        <Icon icon="trophy" size={72} color="#93A63A" />
+      </div>
+      <h2 className="mb-0 mt-5 text-lg font-semibold text-gray-950 dark:text-white">
+        Tổ chức giải đấu
+      </h2>
+      <p className="mb-0 mt-2 text-sm leading-6 text-gray-600 dark:text-gray-400">
+        Tạo giải, mở đăng ký, bốc thăm và vận hành ngày thi đấu.
+      </p>
+    </a>
 
-## Bắt đầu với Coach
+    <a
+      href="/coach/quickstart"
+      className="group block rounded-2xl border border-gray-200 p-4 no-underline transition hover:border-green-500 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-green-600 dark:border-gray-800"
+    >
+      <div className="flex h-48 items-center justify-center rounded-xl bg-green-50 dark:bg-green-950">
+        <Icon icon="graduation-cap" size={72} color="#93A63A" />
+      </div>
+      <h2 className="mb-0 mt-5 text-lg font-semibold text-gray-950 dark:text-white">
+        Huấn luyện viên &amp; Học viện thể thao
+      </h2>
+      <p className="mb-0 mt-2 text-sm leading-6 text-gray-600 dark:text-gray-400">
+        Thiết lập hồ sơ, chương trình và bài học. Tài liệu Học viện đang được cập nhật.
+      </p>
+    </a>
 
-Nếu bạn là Huấn luyện viên, hãy đi theo thứ tự sau để thiết lập nhanh và đúng luồng.
+    <div
+      role="group"
+      aria-label="Chủ sân — Sắp ra mắt"
+      className="rounded-2xl border border-gray-200 p-4 dark:border-gray-800"
+    >
+      <div className="flex h-48 items-center justify-center rounded-xl bg-green-50 dark:bg-green-950">
+        <Icon icon="building" size={72} color="#93A63A" />
+      </div>
+      <div className="mt-5 flex items-center justify-between gap-3">
+        <h2 className="m-0 text-lg font-semibold text-gray-950 dark:text-white">Chủ sân</h2>
+        <Badge color="gray" size="sm">Sắp ra mắt</Badge>
+      </div>
+      <p className="mb-0 mt-2 text-sm leading-6 text-gray-600 dark:text-gray-400">
+        Quản lý cơ sở, lịch sân, booking và khách hàng.
+      </p>
+    </div>
 
-<Columns cols={2}>
-  <Card
-    title="Bắt đầu nhanh 5 phút"
-    icon="zap"
-    href="/coach/quickstart"
-  >
-    Đi theo checklist ngắn để sẵn sàng nhận học viên 1-1.
-  </Card>
-  <Card
-    title="Tổng quan Coach"
-    icon="compass"
-    href="/coach/overview"
-  >
-    Hiểu rõ mục tiêu của module Coach và các bước bạn sẽ thực hiện.
-  </Card>
-  <Card
-    title="Tạo hồ sơ Coach"
-    icon="user-round"
-    href="/coach/create-profile"
-  >
-    Cập nhật hồ sơ, giới thiệu, link mạng xã hội và thành tích nổi bật.
-  </Card>
-  <Card
-    title="Tạo chương trình 1-1"
-    icon="calendar-plus"
-    href="/coach/create-program"
-  >
-    Tạo chương trình học 1-1 với thời lượng, học phí và trạng thái phù hợp.
-  </Card>
-  <Card
-    title="Quản lý bài học"
-    icon="book-open"
-    href="/coach/manage-lessons"
-  >
-    Thêm, sửa, xóa bài học trong chương trình để cá nhân hóa lộ trình cho học viên.
-  </Card>
-</Columns>
+    <div
+      role="group"
+      aria-label="Người chơi và Câu lạc bộ — Sắp ra mắt"
+      className="rounded-2xl border border-gray-200 p-4 dark:border-gray-800"
+    >
+      <div className="flex h-48 items-center justify-center rounded-xl bg-green-50 dark:bg-green-950">
+        <Icon icon="users" size={72} color="#93A63A" />
+      </div>
+      <div className="mt-5 flex items-center justify-between gap-3">
+        <h2 className="m-0 text-lg font-semibold text-gray-950 dark:text-white">
+          Người chơi &amp; Câu lạc bộ
+        </h2>
+        <Badge color="gray" size="sm">Sắp ra mắt</Badge>
+      </div>
+      <p className="mb-0 mt-2 text-sm leading-6 text-gray-600 dark:text-gray-400">
+        Quản lý hồ sơ, tham gia hoạt động và theo dõi hành trình thi đấu.
+      </p>
+    </div>
+  </div>
 
-## Cần hỗ trợ?
-
-Bạn có thể liên hệ đội ngũ Sportix qua email hỗ trợ trong thanh điều hướng hoặc xem phần câu hỏi thường gặp.
-
-<Card
-  title="Bắt đầu Tournament Organizer"
-  icon="trophy"
-  href="/tournament/organizer-quickstart"
->
-  Checklist nhanh để Ban tổ chức tạo và vận hành giải đấu hiệu quả.
-</Card>
-
-<Card
-  title="Hệ thống điểm trình"
-  icon="chart-line"
-  href="/he-thong-diem-trinh"
->
-  Hiểu cách điểm ELO hoạt động, tăng giảm và đảm bảo công bằng trên Sportix.
-</Card>
-
-<Card
-  title="Changelog Sportix"
-  icon="history"
-  href="/changelog"
->
-  Theo dõi các bản cập nhật sản phẩm mới nhất theo từng mốc phát hành.
-</Card>
-
-<Card
-  title="Timeline & phiên bản"
-  icon="git-branch"
-  href="/timeline"
->
-  Xem timeline phát triển và phiên bản hiện tại của Web và Mobile.
-</Card>
-
-<Card
-  title="Xem FAQ Coach"
-  icon="circle-help"
-  href="/coach/faq"
->
-  Tổng hợp các lỗi thường gặp và hướng xử lý nhanh cho người dùng cơ bản.
-</Card>
+  <p className="mt-12 text-center text-sm text-gray-600 dark:text-gray-400">
+    Cần hỗ trợ? <a href="mailto:support@sportix.vn">Liên hệ đội ngũ Sportix</a>.
+  </p>
+</main>
