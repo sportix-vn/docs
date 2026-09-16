@@ -14,6 +14,7 @@
 | Bốc thăm | `/organizer/tournaments/dashboard?...&tab=draw` | Bracket trống có slot; chưa hoàn tất bốc thăm | `[aria-label="Bracket bốc thăm"]` | Desktop 1440×900 | `organizer-draw.png` | Cần chụp |
 | Điều phối sân | `/organizer/tournaments/dashboard?...&tab=courts` | Đã bật điều phối sân; có trận sẵn sàng và sân trống | `[data-docs="tournament-court-control"]` | Desktop 1440×900 | `organizer-court-coordination.png` | Cần chụp |
 | Nhập điểm | `/organizer/tournaments/dashboard?...&tab=bracket` | Giải đang diễn ra; mở trận có đủ hai bên | dialog tên `Cập nhật tỉ số` | Desktop 1440×900 | `organizer-dashboard-score-modal.png` | Tái sử dụng; đã khớp UI chính |
+| Màn hình trọng tài | `/referee/matches/{matchId}` | Bật trọng tài công khai; mở link bằng phiên chưa đăng nhập; form nhập tên và PIN đang hiển thị | `[data-docs="referee-pin-entry"]` | Mobile 390×844 | `organizer-referee-pin.png` | Cần chụp |
 | Kết quả thi đấu | `/organizer/tournaments/dashboard?...&tab=results` | Nội dung có trận hoàn tất; có vòng bảng hoặc nhánh đấu | `[data-docs="tournament-results"]` | Desktop 1440×900 | `organizer-results.png` | Cần chụp |
 
 ## Quy tắc chụp

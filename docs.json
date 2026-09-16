@@ -49,50 +49,72 @@
             ]
           },
           {
-            "group": "Tournament · Bắt đầu",
+            "group": "Tổ chức giải đấu",
+            "icon": "trophy",
+            "root": "tournament/organizer-quickstart",
             "pages": [
-              "tournament/organizer-quickstart",
-              "tournament/organizer-create-tournament",
-              "tournament/organizer-dashboard"
-            ]
-          },
-          {
-            "group": "Tournament · Trước ngày thi đấu",
-            "pages": [
-              "tournament/organizer-open-registration",
-              "tournament/organizer-manage-events",
-              "tournament/organizer-edit-and-status",
-              "tournament/organizer-settings-and-staff",
-              "tournament/organizer-manage-athletes",
-              "tournament/organizer-import-athletes",
-              "tournament/organizer-bracket-setup",
-              "tournament/organizer-bracket-slots",
-              "tournament/organizer-draw-ceremony",
-              "tournament/organizer-team-tie-cross-team"
-            ]
-          },
-          {
-            "group": "Tournament · Ngày thi đấu",
-            "pages": [
-              "tournament/organizer-court-coordination",
-              "tournament/organizer-bracket-manager",
-              "tournament/organizer-results",
-              "tournament/organizer-hud-live-score",
-              "tournament/organizer-stream-video"
-            ]
-          },
-          {
-            "group": "Tournament · Sau giải",
-            "pages": [
-              "tournament/organizer-finish-and-podium",
-              "tournament/organizer-announcements"
-            ]
-          },
-          {
-            "group": "Tournament · Xử lý sự cố",
-            "pages": [
-              "tournament/organizer-glossary",
-              "tournament/organizer-faq"
+              {
+                "group": "Bắt đầu",
+                "expanded": true,
+                "pages": [
+                  "tournament/organizer-create-tournament",
+                  "tournament/organizer-dashboard"
+                ]
+              },
+              {
+                "group": "Trước ngày thi đấu",
+                "pages": [
+                  {
+                    "group": "Thiết lập giải",
+                    "pages": [
+                      "tournament/organizer-open-registration",
+                      "tournament/organizer-manage-events",
+                      "tournament/organizer-edit-and-status",
+                      "tournament/organizer-settings-and-staff"
+                    ]
+                  },
+                  {
+                    "group": "Vận động viên",
+                    "pages": [
+                      "tournament/organizer-manage-athletes",
+                      "tournament/organizer-import-athletes"
+                    ]
+                  },
+                  {
+                    "group": "Bảng đấu",
+                    "pages": [
+                      "tournament/organizer-bracket-setup",
+                      "tournament/organizer-bracket-slots",
+                      "tournament/organizer-draw-ceremony",
+                      "tournament/organizer-team-tie-cross-team"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Ngày thi đấu",
+                "pages": [
+                  "tournament/organizer-court-coordination",
+                  "tournament/organizer-bracket-manager",
+                  "tournament/organizer-results",
+                  "tournament/organizer-hud-live-score",
+                  "tournament/organizer-stream-video"
+                ]
+              },
+              {
+                "group": "Sau giải",
+                "pages": [
+                  "tournament/organizer-finish-and-podium",
+                  "tournament/organizer-announcements"
+                ]
+              },
+              {
+                "group": "Tra cứu và xử lý sự cố",
+                "pages": [
+                  "tournament/organizer-glossary",
+                  "tournament/organizer-faq"
+                ]
+              }
             ]
           }
         ]
