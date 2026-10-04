@@ -57,6 +57,7 @@
                 "group": "Bắt đầu",
                 "expanded": true,
                 "pages": [
+                  "tournament/organizer-chatgpt",
                   "tournament/organizer-create-tournament",
                   "tournament/organizer-dashboard"
                 ]
